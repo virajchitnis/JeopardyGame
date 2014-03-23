@@ -1,15 +1,23 @@
 * {
-margin: 0;
+	margin: 0;
 }
-html, body {
-height: 100%;
+	html, body {
+	height: 100%;
 }
 .wrapper {
-min-height: 100%;
-height: auto !important;
-height: 100%;
-margin: 0 auto -2em;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+}
+.header {
+	margin-left: 1cm;
+	margin-right: 1cm;
 }
 .footer, .push {
-height: 2em;
+	height: 2em;
+}
+.footer_text {
+	font-size: 8pt;
+	text-align: center;
 }
