@@ -34,7 +34,7 @@
 				</form>
 				<p>&nbsp;</p>
 				<div>
-					<form class="create_game_buttons" id="done_button" method="post" action="scripts/createqbank.php" onsubmit="createJSON()">
+					<form class="create_game_buttons" id="done_button" method="post" action="scripts/getqbank.php" onsubmit="createJSON()">
 						<input type="hidden" name="json" value="">
 						<input type="submit" value="Done">
 					</form>

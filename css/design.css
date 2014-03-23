@@ -30,6 +30,10 @@
 	margin-left: 1cm;
 	margin-right: 1cm;
 }
+#download_body {
+	width: 100%;
+	text-align: center;
+}
 .create_game_buttons {
 	display: inline;
 }
