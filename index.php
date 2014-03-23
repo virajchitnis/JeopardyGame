@@ -20,14 +20,14 @@
 							<p>Play jeopardy online.</p>
 						</td>
 						<td class="welcome_table_data">
-							<button onclick="showCreatePage()">Create new game</button>
+							<button onclick="showCreatePage()">Create question bank</button>
 							<button>Play game</button>
 						</td>
 					</tr>
 				</table>
 			</div>
 			<div id="creategame_body">
-				<h3>Create a new game:</h3>
+				<h3>Create a question bank:</h3>
 				<form>
 					<input type="text" name="category" placeholder="Category">
 					<input type="text" name="category" placeholder="Question" size="50">
