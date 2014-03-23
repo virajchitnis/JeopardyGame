@@ -66,5 +66,6 @@ function createJSON () {
 	}
 	
 	var jsonified = JSON.stringify(questions);
-	document.getElementById("test_para").innerHTML = jsonified;
+	alert(jsonified);
+	document.getElementById('done_button').elements[0].value = jsonified;
 }

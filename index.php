@@ -36,15 +36,13 @@
 					<input type="text" name="weight" placeholder="Weight" size="6">
 				</form>
 				<div>
-					<form class="create_game_buttons">
+					<form class="create_game_buttons" id="done_button" method="post" action="scripts/createqbank.php" onsubmit="createJSON()">
 						<input type="hidden" name="json" value="">
 						<input type="submit" value="Done">
 					</form>
 					<button class="create_game_buttons" onclick="addQuestion()">Add more</button>
 					<button class="create_game_buttons" onclick="showWelcomePage()">Go back</button>
 				</div>
-				<button onclick="createJSON()">Test</button>
-				<p id="test_para"></p>
 			</div>
 			<div class="push"></div>
 		</div>
