@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/design.css">
+		<script src="js/index.js"></script>
 		<title>Welcome to Jeopardy!</title>
 	</head>
 	<body>
@@ -19,11 +20,15 @@
 							<p>Play jeopardy online.</p>
 						</td>
 						<td class="welcome_table_data">
-							<button>Create new game</button>
+							<button onclick="showCreatePage()">Create new game</button>
 							<button>Play game</button>
 						</td>
 					</tr>
 				</table>
+			</div>
+			<div id="creategame_body">
+				<p>This is where a new game can be created.</p>
+				<button onclick="showWelcomePage()">Go back</button>
 			</div>
 			<div class="push"></div>
 		</div>
