@@ -30,6 +30,9 @@
 	margin-left: 1cm;
 	margin-right: 1cm;
 }
+.create_game_buttons {
+	display: inline;
+}
 .footer, .push {
 	height: 2em;
 }

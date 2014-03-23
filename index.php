@@ -35,12 +35,14 @@
 					<input type="text" name="answer" placeholder="Answer" size="25">
 					<input type="text" name="weight" placeholder="Weight" size="6">
 				</form>
-				<form>
-					<input type="hidden" name="json" value="">
-					<input type="submit" value="Done">
-					<button onclick="addQuestion()">Add more</button>
-					<button onclick="showWelcomePage()">Go back</button>
-				</form>
+				<div>
+					<form class="create_game_buttons">
+						<input type="hidden" name="json" value="">
+						<input type="submit" value="Done">
+					</form>
+					<button class="create_game_buttons" onclick="addQuestion()">Add more</button>
+					<button class="create_game_buttons" onclick="showWelcomePage()">Go back</button>
+				</div>
 				<button onclick="createJSON()">Test</button>
 				<p id="test_para"></p>
 			</div>
