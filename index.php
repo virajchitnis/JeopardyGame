@@ -28,13 +28,13 @@
 			</div>
 			<div id="creategame_body">
 				<h3>Create a question bank:</h3>
-				<form>
+				<form id="question_form">
 					<input type="text" name="category" placeholder="Category">
-					<input type="text" name="category" placeholder="Question" size="50">
-					<input type="text" name="category" placeholder="Answer" size="25">
-					<input type="text" name="category" placeholder="Weight" size="6">
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
 				</form>
-				<button>Add more</button>
+				<button onclick="addQuestion()">Add more</button>
 				<button onclick="showWelcomePage()">Go back</button>
 			</div>
 			<div class="push"></div>
