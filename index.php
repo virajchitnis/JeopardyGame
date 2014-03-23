@@ -27,7 +27,14 @@
 				</table>
 			</div>
 			<div id="creategame_body">
-				<p>This is where a new game can be created.</p>
+				<h3>Create a new game:</h3>
+				<form>
+					<input type="text" name="category" placeholder="Category">
+					<input type="text" name="category" placeholder="Question" size="50">
+					<input type="text" name="category" placeholder="Answer" size="25">
+					<input type="text" name="category" placeholder="Weight" size="6">
+				</form>
+				<button>Add more</button>
 				<button onclick="showWelcomePage()">Go back</button>
 			</div>
 			<div class="push"></div>
