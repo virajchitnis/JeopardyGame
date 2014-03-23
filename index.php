@@ -34,8 +34,12 @@
 					<input type="text" name="answer" placeholder="Answer" size="25">
 					<input type="text" name="weight" placeholder="Weight" size="6">
 				</form>
-				<button onclick="addQuestion()">Add more</button>
-				<button onclick="showWelcomePage()">Go back</button>
+				<form>
+					<input type="hidden" name="json" value="">
+					<input type="submit" value="Done">
+					<button onclick="addQuestion()">Add more</button>
+					<button onclick="showWelcomePage()">Go back</button>
+				</form>
 			</div>
 			<div class="push"></div>
 		</div>
