@@ -7,11 +7,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
-				<p>&nbsp;</p>
-				<h1>Jeopardy!</h1>
-			</div>
-			<p>&nbsp;</p>
+			<?php include('common/header.php'); ?>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<div id="welcome_body">
@@ -29,12 +25,14 @@
 			</div>
 			<div id="creategame_body">
 				<h3>Create a question bank:</h3>
+				<p>&nbsp;</p>
 				<form id="question_form">
 					<input type="text" name="category" placeholder="Category">
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
 					<input type="text" name="weight" placeholder="Weight" size="6">
 				</form>
+				<p>&nbsp;</p>
 				<div>
 					<form class="create_game_buttons" id="done_button" method="post" action="scripts/createqbank.php" onsubmit="createJSON()">
 						<input type="hidden" name="json" value="">
@@ -46,8 +44,6 @@
 			</div>
 			<div class="push"></div>
 		</div>
-		<div class="footer">
-			<p class="footer_text">&copy; 2014 Viraj Chitnis</p>
-		</div>
+		<?php include('common/footer.php'); ?>
 	</body>
 </html>
