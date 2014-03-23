@@ -51,3 +51,20 @@ function addQuestion () {
 	parent.appendChild(space3);
 	parent.appendChild(weightText);
 }
+
+function createJSON () {
+	var dataForm = document.getElementById('question_form');
+	var questions = new Array();
+	
+	for (var i = 0; i < dataForm.length; i += 4) {
+		var currQuestion = new Question();
+		currQuestion.category = dataForm.elements[i].value;
+		currQuestion.question = dataForm.elements[i+1].value;
+		currQuestion.answer = dataForm.elements[i+2].value;
+		currQuestion.weight = dataForm.elements[i+3].value;
+		questions.push(currQuestion);
+	}
+	
+	var jsonified = JSON.stringify(questions);
+	document.getElementById("test_para").innerHTML = jsonified;
+}

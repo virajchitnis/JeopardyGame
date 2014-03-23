@@ -2,6 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/index.js"></script>
+		<script src="js/types.js"></script>
 		<title>Welcome to Jeopardy!</title>
 	</head>
 	<body>
@@ -40,6 +41,8 @@
 					<button onclick="addQuestion()">Add more</button>
 					<button onclick="showWelcomePage()">Go back</button>
 				</form>
+				<button onclick="createJSON()">Test</button>
+				<p id="test_para"></p>
 			</div>
 			<div class="push"></div>
 		</div>
