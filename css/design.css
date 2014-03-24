@@ -40,6 +40,12 @@
 #hidden_json {
 	display: none;
 }
+#body_background {
+	background-color: grey;
+}
+#setup_div {
+	text-align: center;
+}
 .footer, .push {
 	height: 2em;
 }
