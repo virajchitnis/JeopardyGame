@@ -1,12 +1,17 @@
 <html>
 	<head>
 		<?php
-			if (isset($_POST['json'])) {
+			function sanitizeString($string) {
+				$string = preg_replace('/[^A-Za-z0-9\. -]/', '-', $string); // Removes special chars.
+				return str_replace(' ', '_', $string); // Replaces all spaces with hyphens.
+			}
+		
+			if ((isset($_POST['json'])) && (isset($_POST['filename']))) {
 				$json = $_POST['json'];
-				$file = "testbank";
-				
+				$file = $_POST['filename'];
 				$location = "/tmp/";
 				
+				$file = sanitizeString($file);
 				file_put_contents($location.$file, $json);
 				exec("gzip -S .qbk ".$location.$file);
 			}

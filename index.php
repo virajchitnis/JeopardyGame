@@ -26,6 +26,10 @@
 			<div id="creategame_body">
 				<h3>Create a question bank:</h3>
 				<p>&nbsp;</p>
+				<form id="name_form">
+					<input type="text" name="filename" placeholder="Question bank name" size="25" maxlength="25">
+				</form>
+				<p>&nbsp;</p>
 				<form id="question_form">
 					<input type="text" name="category" placeholder="Category">
 					<input type="text" name="question" placeholder="Question" size="50">
@@ -36,6 +40,7 @@
 				<div>
 					<form class="create_game_buttons" id="done_button" method="post" action="scripts/getqbank.php" onsubmit="createJSON()">
 						<input type="hidden" name="json" value="">
+						<input type="hidden" name="filename" value="">
 						<input type="submit" value="Done">
 					</form>
 					<button class="create_game_buttons" onclick="addQuestion()">Add more</button>
