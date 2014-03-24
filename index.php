@@ -3,6 +3,7 @@
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/index.js"></script>
 		<script src="js/types.js"></script>
+		<script src="js/openlink.js"></script>
 		<title>Welcome to Jeopardy!</title>
 	</head>
 	<body>
@@ -18,7 +19,7 @@
 						</td>
 						<td class="welcome_table_data">
 							<button onclick="showCreatePage()">Create question bank</button>
-							<button>Play game</button>
+							<button onclick="openLink('game.php')">Play game</button>
 						</td>
 					</tr>
 				</table>

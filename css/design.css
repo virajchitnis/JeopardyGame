@@ -37,6 +37,9 @@
 .create_game_buttons {
 	display: inline;
 }
+#hidden_json {
+	display: none;
+}
 .footer, .push {
 	height: 2em;
 }

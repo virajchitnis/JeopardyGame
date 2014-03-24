@@ -12,6 +12,7 @@ function addQuestion () {
 	var parent = document.getElementById('question_form');
 	
 	var breakLine = document.createElement('br');
+	var breakLine1 = document.createElement('br');
 	var space1 = document.createElement('span');
 	var space2 = document.createElement('span');
 	var space3 = document.createElement('span');
@@ -43,6 +44,7 @@ function addQuestion () {
 	weightText.setAttribute('size', '6');
 	
 	parent.appendChild(breakLine);
+	parent.appendChild(breakLine1);
 	parent.appendChild(categoryText);
 	parent.appendChild(space1);
 	parent.appendChild(questionText);
