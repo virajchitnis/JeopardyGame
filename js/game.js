@@ -1,3 +1,5 @@
+var questions;	// Array that will contain the parsed JSON
+
 function addTeam () {
 	var parent = document.getElementById('team_form');
 	var previous = parseInt(parent.elements[parent.length - 1].name);
@@ -26,6 +28,8 @@ function addTeam () {
 }
 
 function startGame () {
+	questions = JSON.parse(document.getElementById('hidden_json').innerHTML);
+	
 	document.getElementById('setup_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
 }
