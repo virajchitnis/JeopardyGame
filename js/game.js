@@ -1,4 +1,6 @@
 var questions;	// Array that will contain the parsed JSON
+var teams;		// Array that will contain the list of all playing teams
+var timer;		// Variable containing the amount of time per team per question
 
 function addTeam () {
 	var parent = document.getElementById('team_form');
@@ -29,6 +31,16 @@ function addTeam () {
 
 function startGame () {
 	questions = JSON.parse(document.getElementById('hidden_json').innerHTML);
+	timer = parseInt(document.getElementById('timer_form').elements[0].value);
+	teamForm = document.getElementById('team_form');
+	teams = new Array();
+	
+	for (var i = 0; i < teamForm.length; i++) {
+		var currTeam = teamForm.elements[i].value;
+		if (currTeam !== "") {
+			teams.push(currTeam);
+		}
+	}
 	
 	document.getElementById('setup_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
