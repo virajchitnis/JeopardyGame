@@ -46,6 +46,13 @@
 #setup_div {
 	text-align: center;
 }
+#board_div {
+	display: none;
+}
+#board_div_header {
+	margin-left: 1cm;
+	margin-right: 1cm;
+}
 .footer, .push {
 	height: 2em;
 }

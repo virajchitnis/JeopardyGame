@@ -24,3 +24,13 @@ function addTeam () {
 	}
 	parent.appendChild(teamText);
 }
+
+function startGame () {
+	document.getElementById('setup_div').style.display = "none";
+	document.getElementById('board_div').style.display = "block";
+}
+
+function restartGame () {
+	document.getElementById('board_div').style.display = "none";
+	document.getElementById('setup_div').style.display = "block";
+}

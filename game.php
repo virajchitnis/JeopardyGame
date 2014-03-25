@@ -12,6 +12,7 @@
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/game.js"></script>
+		<script src="js/types.js"></script>
 		<title><?php echo $open_file; ?> - Play Jeopardy!</title>
 	</head>
 	<body id="body_background">
@@ -33,7 +34,14 @@
 			</form>
 			<p>&nbsp;</p>
 			<button onclick="addTeam()">Add more</button>
-			<button>Start game</button>
+			<button onclick="startGame()">Start game</button>
+		</div>
+		<div id="board_div">
+			<div id="board_div_header">
+				<p>&nbsp;</p>
+				<button onclick="restartGame()">Restart game</button>
+				<button>End game</button>
+			</div>
 		</div>
 		<p id="hidden_json"><?php echo $json; ?></p>
 	</body>
