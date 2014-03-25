@@ -42,9 +42,9 @@ function startGame () {
 	
 	for (var i = 0; i < teamForm.length; i++) {
 		var currTeam = teamForm.elements[i].value;
-		var currScore = 0;
-		scores.push(currScore);
 		if (currTeam !== "") {
+			var currScore = 0;
+			scores.push(currScore);
 			teams.push(currTeam);
 		}
 	}
