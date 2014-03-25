@@ -1,6 +1,10 @@
-var questions;	// Array that will contain the parsed JSON
-var teams;		// Array that will contain the list of all playing teams
-var timer;		// Variable containing the amount of time per team per question
+var questions;		// Array that will contain the parsed JSON
+var teams;			// Array that will contain the list of all playing teams
+var timer;			// Variable containing the amount of time per team per question
+var scores;			// Array for keeping track of the scores of all teams
+
+var currTeam;		// Keeps track of the team thats currently answering
+var lastWinTeam;	// Keeps track of the team that won the last round
 
 function addTeam () {
 	var parent = document.getElementById('team_form');
@@ -34,9 +38,12 @@ function startGame () {
 	timer = parseInt(document.getElementById('timer_form').elements[0].value);
 	teamForm = document.getElementById('team_form');
 	teams = new Array();
+	scores = new Array();
 	
 	for (var i = 0; i < teamForm.length; i++) {
 		var currTeam = teamForm.elements[i].value;
+		var currScore = 0;
+		scores.push(currScore);
 		if (currTeam !== "") {
 			teams.push(currTeam);
 		}
