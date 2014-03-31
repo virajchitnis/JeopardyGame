@@ -11,13 +11,13 @@
 		    die('Unable to connect to database [' . $db->connect_error . ']');
 		}
 		
-		$sql = "INSERT INTO \'QBanks\' VALUES (\'".$db->escape_string($name)."\',\'".$db->escape_string($author)."\',\'".$db->escape_string($json)."\')";
-
-		if(!$result = $db->query($sql)){
-		    die('There was an error running the query [' . $db->error . ']');
-		}
+		$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?);");
+		$sql->bind_param("sss", $name, $author, $json);
+		$sql->execute();
 		
 		$db->close();
+		
+		header("Location: ../");
 	}
 	else {
 		header('Location: ../');

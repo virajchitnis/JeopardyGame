@@ -28,7 +28,8 @@
 				<h3>Create a question bank:</h3>
 				<p>&nbsp;</p>
 				<form id="name_form">
-					<input type="text" name="filename" placeholder="Question bank name" size="25" maxlength="25">
+					<input type="text" name="name" placeholder="Question bank name" size="25" maxlength="25">
+					<input type="text" name="author" placeholder="Author name" size="25" maxlength="25">
 				</form>
 				<p>&nbsp;</p>
 				<form id="question_form">
@@ -39,9 +40,10 @@
 				</form>
 				<p>&nbsp;</p>
 				<div>
-					<form class="create_game_buttons" id="done_button" method="post" action="scripts/getqbank.php" onsubmit="createJSON()">
+					<form class="create_game_buttons" id="done_button" method="post" action="scripts/storejson.php" onsubmit="createJSON()">
 						<input type="hidden" name="json" value="">
-						<input type="hidden" name="filename" value="">
+						<input type="hidden" name="name" value="">
+						<input type="hidden" name="author" value="">
 						<input type="submit" value="Done">
 					</form>
 					<button class="create_game_buttons" onclick="addQuestion()">Add more</button>

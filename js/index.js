@@ -69,6 +69,8 @@ function createJSON () {
 	
 	var jsonified = JSON.stringify(questions);
 	var filename = document.getElementById('name_form').elements[0].value;
+	var author = document.getElementById('name_form').elements[1].value;
 	document.getElementById('done_button').elements[0].value = jsonified;
 	document.getElementById('done_button').elements[1].value = filename;
+	document.getElementById('done_button').elements[2].value = author;
 }
