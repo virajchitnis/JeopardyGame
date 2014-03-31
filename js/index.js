@@ -63,14 +63,30 @@ function createJSON () {
 	while (i < dataForm.length) {
 		if ((i == 0) || (i == 16) || (i == 32) || (i == 48) || (i == 64) || (i == 80)) {
 			currCategory = dataForm.elements[i].value;
+			if (currCategory == null || currCategory == ""){
+				alert("Category cannot be blank!");
+				return false;
+			}
 			i++;
 		}
 		else {
 			var currQuestion = new Question();
 			currQuestion.category = currCategory;
 			currQuestion.question = dataForm.elements[i].value;
+			if (currQuestion.question == null || currQuestion.question == ""){
+				alert("Question cannot be blank!");
+				return false;
+			}
 			currQuestion.answer = dataForm.elements[i+1].value;
+			if (currQuestion.answer == null || currQuestion.answer == ""){
+				alert("Answer cannot be blank!");
+				return false;
+			}
 			currQuestion.weight = dataForm.elements[i+2].value;
+			if (currQuestion.weight == null || currQuestion.weight == ""){
+				alert("Points cannot be blank!");
+				return false;
+			}
 			questions.push(currQuestion);
 			i += 3;
 		}
@@ -78,7 +94,15 @@ function createJSON () {
 	
 	var jsonified = JSON.stringify(questions);
 	var filename = document.getElementById('name_form').elements[0].value;
+	if (filename == null || filename == ""){
+		alert("Question bank name cannot be blank!");
+		return false;
+	}
 	var author = document.getElementById('name_form').elements[1].value;
+	if (author == null || author == ""){
+		alert("Author cannot be blank!");
+		return false;
+	}
 	document.getElementById('done_button').elements[0].value = jsonified;
 	document.getElementById('done_button').elements[1].value = filename;
 	document.getElementById('done_button').elements[2].value = author;

@@ -172,7 +172,7 @@
 				</form>
 				<p>&nbsp;</p>
 				<div>
-					<form class="create_game_buttons" id="done_button" method="post" action="scripts/storejson.php" onsubmit="createJSON()">
+					<form class="create_game_buttons" id="done_button" method="post" action="scripts/storejson.php" onsubmit=" return createJSON()">
 						<input type="hidden" name="json" value="">
 						<input type="hidden" name="name" value="">
 						<input type="hidden" name="author" value="">
