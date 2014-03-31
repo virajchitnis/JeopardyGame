@@ -4,7 +4,7 @@
 		$name = $_POST['name'];
 		$author = $_POST['author'];
 		
-		$json_hash = hash('md5', $json);
+		$qbhash = hash('md5', $name.$author.$json);
 		
 		include("../config/config_sample.php");
 		$db = new mysqli($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE);
@@ -14,7 +14,7 @@
 		}
 		
 		$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?, ?);");
-		$sql->bind_param("ssss", $name, $author, $json, $json_hash);
+		$sql->bind_param("ssss", $name, $author, $json, $qbhash);
 		$sql->execute();
 		
 		$db->close();
