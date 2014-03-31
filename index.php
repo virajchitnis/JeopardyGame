@@ -34,6 +34,138 @@
 				<p>&nbsp;</p>
 				<form id="question_form">
 					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<br>
+					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<br>
+					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<br>
+					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<br>
+					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<br>
+					<input type="text" name="category" placeholder="Category">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
+					<input type="text" name="question" placeholder="Question" size="50">
+					<input type="text" name="answer" placeholder="Answer" size="25">
+					<input type="text" name="weight" placeholder="Weight" size="6">
+					<br>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
 					<input type="text" name="weight" placeholder="Weight" size="6">
@@ -46,10 +178,10 @@
 						<input type="hidden" name="author" value="">
 						<input type="submit" value="Done">
 					</form>
-					<button class="create_game_buttons" onclick="addQuestion()">Add more</button>
 					<button class="create_game_buttons" onclick="showWelcomePage()">Go back</button>
 				</div>
 			</div>
+			<p>&nbsp;</p>
 			<div class="push"></div>
 		</div>
 		<?php include('common/footer.php'); ?>

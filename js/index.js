@@ -58,13 +58,22 @@ function createJSON () {
 	var dataForm = document.getElementById('question_form');
 	var questions = new Array();
 	
-	for (var i = 0; i < dataForm.length; i += 4) {
-		var currQuestion = new Question();
-		currQuestion.category = dataForm.elements[i].value;
-		currQuestion.question = dataForm.elements[i+1].value;
-		currQuestion.answer = dataForm.elements[i+2].value;
-		currQuestion.weight = dataForm.elements[i+3].value;
-		questions.push(currQuestion);
+	var currCategory = "";
+	var i = 0;
+	while (i < dataForm.length) {
+		if ((i == 0) || (i == 16) || (i == 32) || (i == 48) || (i == 64) || (i == 80)) {
+			currCategory = dataForm.elements[i].value;
+			i++;
+		}
+		else {
+			var currQuestion = new Question();
+			currQuestion.category = currCategory;
+			currQuestion.question = dataForm.elements[i].value;
+			currQuestion.answer = dataForm.elements[i+1].value;
+			currQuestion.weight = dataForm.elements[i+2].value;
+			questions.push(currQuestion);
+			i += 3;
+		}
 	}
 	
 	var jsonified = JSON.stringify(questions);
