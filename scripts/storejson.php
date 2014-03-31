@@ -4,6 +4,8 @@
 		$name = $_POST['name'];
 		$author = $_POST['author'];
 		
+		$json_hash = hash('md5', $json);
+		
 		include("../config/config_sample.php");
 		$db = new mysqli($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE);
 
@@ -11,8 +13,8 @@
 		    die('Unable to connect to database [' . $db->connect_error . ']');
 		}
 		
-		$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?);");
-		$sql->bind_param("sss", $name, $author, $json);
+		$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?, ?);");
+		$sql->bind_param("ssss", $name, $author, $json, $json_hash);
 		$sql->execute();
 		
 		$db->close();
