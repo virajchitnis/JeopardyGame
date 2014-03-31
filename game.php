@@ -41,6 +41,60 @@
 				<p>&nbsp;</p>
 				<button onclick="restartGame()">Restart game</button>
 				<button>End game</button>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<div>
+					<table>
+						<tr>
+							<th>
+								<div class="board_game_box">
+									<p>&nbsp;</p>
+									<p class="board_game_box_text">Category 1</p>
+									<p>&nbsp;</p>
+								</div>
+							</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="board_game_box">
+									<p>&nbsp;</p>
+									<p class="board_game_box_text">10</p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="board_game_box">
+									<p>&nbsp;</p>
+									<p class="board_game_box_text">100</p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="board_game_box">
+									<p>&nbsp;</p>
+									<p class="board_game_box_text">500</p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="board_game_box">
+									<p>&nbsp;</p>
+									<p class="board_game_box_text">1000</p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		<p id="hidden_json"><?php echo $json; ?></p>
