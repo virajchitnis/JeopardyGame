@@ -66,9 +66,27 @@
 	color: yellow;
 }
 #games_body {
-	width: 100%;
 	margin-left: 1cm;
 	margin-right: 1cm;
+}
+#games_table {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+#games_table th {
+	background: #eee;
+	padding: 5px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	width: calc(100% / 3);
+}
+#games_table td {
+	padding: 5px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	font-size:10pt;
+	width: calc(100% / 3);
 }
 .footer, .push {
 	height: 2em;
