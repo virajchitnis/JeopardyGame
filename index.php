@@ -19,7 +19,7 @@
 						</td>
 						<td class="welcome_table_data">
 							<button onclick="showCreatePage()">Create question bank</button>
-							<button onclick="openLink('game.php')">Play game</button>
+							<button onclick="openLink('games.php')">Play game</button>
 						</td>
 					</tr>
 				</table>
