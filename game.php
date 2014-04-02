@@ -1,14 +1,24 @@
 <html>
 	<head>
 		<?php
-			$file = "test.qbk";
-			$open_file = "test_open.qbk";
-			$location = "/tmp/";
-			
-			exec("cp ".$location.$file." ".$location.$open_file);
-			exec("gunzip -S .qbk ".$location.$open_file);
-			$json = file_get_contents($location.basename($open_file, ".qbk"));
-			exec("rm ".$location.basename($open_file, ".qbk"));
+			if (isset($_GET['key'])) {
+				$json_hash = $_GET['key'];
+				
+				include("config/config_sample.php");
+				$db = new mysqli($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE);
+
+				if($db->connect_errno > 0){
+				    die('Unable to connect to database [' . $db->connect_error . ']');
+				}
+		
+				$sql = $db->prepare("SELECT json FROM QBanks WHERE json_hash = ?;");
+				$sql->bind_param('s', $json_hash);
+				$sql->execute();
+				$sql->bind_result($json);
+				$sql->fetch();
+				$sql->free_result();
+				$db->close();
+			}
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/game.js"></script>
