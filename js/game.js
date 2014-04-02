@@ -55,7 +55,8 @@ function startGame () {
 
 function selectQuestion (category, weight, elementID) {
 	document.getElementById('question_text').innerHTML = "You selected: " + weight + " points from category " + category;
-	document.getElementById(elementID).style.backgroundColor = "black";
+	document.getElementById(elementID).className = "board_game_box_selected";
+	document.getElementById(elementID).innerHTML = "<p>&nbsp;</p><h3>&nbsp;</h3><p>&nbsp;</p>";
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('question_div').style.display = "block";
 }
