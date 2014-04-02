@@ -112,6 +112,50 @@
 							</tr>
 							<tr>
 								<td class="board_game_table_box">
+									<div id="board_game_box11" class="board_game_box" onclick="selectQuestion(1,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div id="board_game_box21" class="board_game_box" onclick="selectQuestion(2,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div id="board_game_box31" class="board_game_box" onclick="selectQuestion(3,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div id="board_game_box41" class="board_game_box" onclick="selectQuestion(4,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div id="board_game_box51" class="board_game_box" onclick="selectQuestion(5,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div id="board_game_box61" class="board_game_box" onclick="selectQuestion(6,1,this.id); this.onclick=null;">
+										<p>&nbsp;</p>
+										<h3 class="board_game_box_text">1</h3>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_game_table_box">
 									<div id="board_game_box15" class="board_game_box" onclick="selectQuestion(1,5,this.id); this.onclick=null;">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
