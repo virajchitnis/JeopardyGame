@@ -16,10 +16,10 @@
 				    die('Unable to connect to database [' . $db->connect_error . ']');
 				}
 		
-				$sql = $db->prepare("SELECT json FROM QBanks WHERE json_hash = ?;");
+				$sql = $db->prepare("SELECT json, name FROM QBanks WHERE json_hash = ?;");
 				$sql->bind_param('s', $json_hash);
 				$sql->execute();
-				$sql->bind_result($json);
+				$sql->bind_result($json, $name);
 				$sql->fetch();
 				$sql->free_result();
 				$db->close();
@@ -28,7 +28,7 @@
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/game.js"></script>
 		<script src="js/types.js"></script>
-		<title><?php echo $open_file; ?> - Play Jeopardy!</title>
+		<title><?php echo $name; ?> - Play Jeopardy!</title>
 	</head>
 	<body id="body_background">
 		<div class="wrapper">
