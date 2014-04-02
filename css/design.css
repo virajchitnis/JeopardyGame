@@ -53,6 +53,12 @@
 	margin-left: 1cm;
 	margin-right: 1cm;
 }
+#board_game_table {
+	width: 100%;
+}
+.board_game_table_box {
+	width: calc(100% / 6);
+}
 .board_game_box {
 	text-align: center;
 	background-color: blue;

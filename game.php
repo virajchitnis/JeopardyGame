@@ -60,12 +60,47 @@
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
 					<div>
-						<table>
+						<table id="board_game_table">
 							<tr>
-								<th>
+								<th class="board_game_table_box">
 									<div class="board_game_box">
 										<p>&nbsp;</p>
 										<p class="board_game_box_text">Category 1</p>
+										<p>&nbsp;</p>
+									</div>
+								</th>
+								<th class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">Category 2</p>
+										<p>&nbsp;</p>
+									</div>
+								</th>
+								<th class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">Category 3</p>
+										<p>&nbsp;</p>
+									</div>
+								</th>
+								<th class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">Category 4</p>
+										<p>&nbsp;</p>
+									</div>
+								</th>
+								<th class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">Category 5</p>
+										<p>&nbsp;</p>
+									</div>
+								</th>
+								<th class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">Category 6</p>
 										<p>&nbsp;</p>
 									</div>
 								</th>
@@ -74,7 +109,86 @@
 								<td>&nbsp;</td>
 							</tr>
 							<tr>
-								<td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">5</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">10</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">10</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">10</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">10</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">10</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
 									<div class="board_game_box">
 										<p>&nbsp;</p>
 										<p class="board_game_box_text">10</p>
@@ -83,28 +197,89 @@
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td class="board_game_table_box">
 									<div class="board_game_box">
 										<p>&nbsp;</p>
-										<p class="board_game_box_text">100</p>
+										<p class="board_game_box_text">15</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">15</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">15</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">15</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">15</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">15</p>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td class="board_game_table_box">
 									<div class="board_game_box">
 										<p>&nbsp;</p>
-										<p class="board_game_box_text">500</p>
+										<p class="board_game_box_text">20</p>
 										<p>&nbsp;</p>
 									</div>
 								</td>
-							</tr>
-							<tr>
-								<td>
+								<td class="board_game_table_box">
 									<div class="board_game_box">
 										<p>&nbsp;</p>
-										<p class="board_game_box_text">1000</p>
+										<p class="board_game_box_text">20</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">20</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">20</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">20</p>
+										<p>&nbsp;</p>
+									</div>
+								</td>
+								<td class="board_game_table_box">
+									<div class="board_game_box">
+										<p>&nbsp;</p>
+										<p class="board_game_box_text">20</p>
 										<p>&nbsp;</p>
 									</div>
 								</td>
