@@ -61,6 +61,14 @@ function startGame () {
 		return false;
 	}
 	
+	for (var i = 1; i <= 6; i++) {
+		document.getElementById("board_game_box" + i + "" + 1).innerHTML = "<p>&nbsp;</p><h3 class=\"board_game_box_text\">" + questions[0].weight + "</h3><p>&nbsp;</p>";
+		document.getElementById("board_game_box" + i + "" + 5).innerHTML = "<p>&nbsp;</p><h3 class=\"board_game_box_text\">" + questions[1].weight + "</h3><p>&nbsp;</p>";
+		document.getElementById("board_game_box" + i + "" + 10).innerHTML = "<p>&nbsp;</p><h3 class=\"board_game_box_text\">" + questions[2].weight + "</h3><p>&nbsp;</p>";
+		document.getElementById("board_game_box" + i + "" + 15).innerHTML = "<p>&nbsp;</p><h3 class=\"board_game_box_text\">" + questions[3].weight + "</h3><p>&nbsp;</p>";
+		document.getElementById("board_game_box" + i + "" + 20).innerHTML = "<p>&nbsp;</p><h3 class=\"board_game_box_text\">" + questions[4].weight + "</h3><p>&nbsp;</p>";
+	}
+	
 	document.getElementById('setup_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
 	
