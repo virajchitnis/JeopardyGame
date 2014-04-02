@@ -288,6 +288,26 @@
 					</div>
 				</div>
 			</div>
+			<div id="question_div">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h2 id="question_text">The question</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h3>30</h3>
+				<p>&nbsp;</p>
+				<button onclick="questionAnswered()">Answered</button>
+			</div>
 			<p id="hidden_json"><?php echo $json; ?></p>
 			<div class="push"></div>
 		</div>

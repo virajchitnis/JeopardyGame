@@ -54,7 +54,15 @@ function startGame () {
 }
 
 function selectQuestion (category, weight) {
-	alert("You selected: " + weight + " points from category " + category);
+	document.getElementById('question_text').innerHTML = "You selected: " + weight + " points from category " + category;
+	document.getElementById('board_div').style.display = "none";
+	document.getElementById('question_div').style.display = "block";
+}
+
+function questionAnswered () {
+	document.getElementById('question_text').innerHTML = "";
+	document.getElementById('question_div').style.display = "none";
+	document.getElementById('board_div').style.display = "block";
 }
 
 function restartGame () {

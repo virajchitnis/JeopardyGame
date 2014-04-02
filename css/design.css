@@ -49,6 +49,10 @@
 #board_div {
 	display: none;
 }
+#question_div {
+	display: none;
+	text-align: center;
+}
 #board_div_header {
 	margin-left: 1cm;
 	margin-right: 1cm;
