@@ -56,13 +56,18 @@ function startGame () {
 		}
 	}
 	
-	if (teamCounter > 0) {
-		document.getElementById('setup_div').style.display = "none";
-		document.getElementById('board_div').style.display = "block";
-	}
-	else {
+	if (teamCounter <= 0) {
 		document.getElementById('setup_alert_text').innerHTML = "At least one team is required.";
 		return false;
+	}
+	
+	document.getElementById('setup_div').style.display = "none";
+	document.getElementById('board_div').style.display = "block";
+	
+	var i2 = 0;
+	for (var i = 1; i <= 6; i++) {
+		document.getElementById('board_game_cat' + i).innerHTML = questions[i2].category;
+		i2 += 5;
 	}
 }
 

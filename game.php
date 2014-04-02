@@ -67,42 +67,42 @@
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 1</h3>
+										<h3 id="board_game_cat1" class="board_game_box_text">Category 1</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 2</h3>
+										<h3 id="board_game_cat2" class="board_game_box_text">Category 2</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 3</h3>
+										<h3 id="board_game_cat3" class="board_game_box_text">Category 3</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 4</h3>
+										<h3 id="board_game_cat4" class="board_game_box_text">Category 4</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 5</h3>
+										<h3 id="board_game_cat5" class="board_game_box_text">Category 5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
 								<th class="board_game_table_box">
 									<div class="board_game_header_box">
 										<p>&nbsp;</p>
-										<h3 class="board_game_box_text">Category 6</h3>
+										<h3 id="board_game_cat6" class="board_game_box_text">Category 6</h3>
 										<p>&nbsp;</p>
 									</div>
 								</th>
