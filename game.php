@@ -110,42 +110,42 @@
 							</tr>
 							<tr>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(1,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(2,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(3,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(4,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(5,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(6,5)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">5</h3>
 										<p>&nbsp;</p>
@@ -154,42 +154,42 @@
 							</tr>
 							<tr>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(1,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(2,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(3,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(4,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(5,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(6,10)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">10</h3>
 										<p>&nbsp;</p>
@@ -198,42 +198,42 @@
 							</tr>
 							<tr>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(1,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(2,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(3,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(4,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(5,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(6,15)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">15</h3>
 										<p>&nbsp;</p>
@@ -242,42 +242,42 @@
 							</tr>
 							<tr>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(1,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(2,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(3,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(4,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(5,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
 									</div>
 								</td>
 								<td class="board_game_table_box">
-									<div class="board_game_box">
+									<div class="board_game_box" onclick="selectQuestion(6,20)">
 										<p>&nbsp;</p>
 										<h3 class="board_game_box_text">20</h3>
 										<p>&nbsp;</p>
