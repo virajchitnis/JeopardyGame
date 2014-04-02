@@ -6,7 +6,12 @@
 		
 		$qbhash = hash('md5', $name.$author.$json);
 		
-		include("../config/config_sample.php");
+		if (file_exists('../config/config.php')) {
+			include("../config/config.php");
+		}
+		else {
+			include("../config/config_sample.php");
+		}
 		$db = new mysqli($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE);
 
 		if($db->connect_errno > 0){
