@@ -66,6 +66,10 @@
 	border-width: 5px;
 	border-color: black;
 }
+.board_game_box:hover {
+	border-style: outset;
+	border-color: white;
+}
 .board_game_box_text {
 	margin-left: 15px;
 	margin-right: 15px;
