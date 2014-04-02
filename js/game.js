@@ -53,8 +53,9 @@ function startGame () {
 	document.getElementById('board_div').style.display = "block";
 }
 
-function selectQuestion (category, weight) {
+function selectQuestion (category, weight, elementID) {
 	document.getElementById('question_text').innerHTML = "You selected: " + weight + " points from category " + category;
+	document.getElementById(elementID).style.backgroundColor = "black";
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('question_div').style.display = "block";
 }
