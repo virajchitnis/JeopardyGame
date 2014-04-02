@@ -40,17 +40,30 @@ function startGame () {
 	teams = new Array();
 	scores = new Array();
 	
+	if (isNaN(timer) == true) {
+		document.getElementById('setup_alert_text').innerHTML = "Please enter the time in seconds.";
+		return false;
+	}
+	
+	var teamCounter = 0;
 	for (var i = 0; i < teamForm.length; i++) {
 		var currTeam = teamForm.elements[i].value;
 		if (currTeam !== "") {
 			var currScore = 0;
 			scores.push(currScore);
 			teams.push(currTeam);
+			teamCounter++;
 		}
 	}
 	
-	document.getElementById('setup_div').style.display = "none";
-	document.getElementById('board_div').style.display = "block";
+	if (teamCounter > 0) {
+		document.getElementById('setup_div').style.display = "none";
+		document.getElementById('board_div').style.display = "block";
+	}
+	else {
+		document.getElementById('setup_alert_text').innerHTML = "At least one team is required.";
+		return false;
+	}
 }
 
 function selectQuestion (category, weight, elementID) {

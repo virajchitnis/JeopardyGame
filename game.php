@@ -51,6 +51,8 @@
 				<p>&nbsp;</p>
 				<button onclick="addTeam()">Add more</button>
 				<button onclick="startGame()">Start game</button>
+				<p>&nbsp;</p>
+				<p id="setup_alert_text">&nbsp;</p>
 			</div>
 			<div id="board_div">
 				<div id="board_div_header">
