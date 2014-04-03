@@ -60,7 +60,7 @@
 					<table id="board_div_header_table">
 						<tr>
 							<td id="board_div_header_left">
-								<button onclick="restartGame()">Restart game</button>
+								<button onclick="location.reload();">Restart game</button>
 								<button>End game</button>
 							</td>
 							<td id="board_div_header_right">
