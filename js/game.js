@@ -8,6 +8,9 @@ var lastWinTeam;	// Keeps track of the team that won the last round
 var questionTimer;	// Timer object that will keep time for questions
 var runningTime;	// Time remaining for question
 
+var questionStartTeam;	// Team that chose the question
+var currTeamIndex;		// Index in array of the current team
+
 function addTeam () {
 	var parent = document.getElementById('team_form');
 	var previous = parseInt(parent.elements[parent.length - 1].name);
@@ -104,6 +107,9 @@ function selectQuestion (category, weight, elementID) {
 	document.getElementById('question_div').style.display = "block";
 	document.getElementById('timer_display').innerHTML = timer;
 	
+	currTeamIndex = 0;
+	questionStartTeam = currTeam;
+	
 	runningTime = timer;
 	questionTimer = setInterval(timeTracker, 1000);
 }
@@ -142,17 +148,25 @@ function timeTracker () {
 }
 
 function switchTeam () {
-	for (var i = 0; i < teams.length; i++) {
-		if ((currTeam === teams[i]) && ((i+1) < teams.length)) {
-			currTeam = teams[i+1];
-			runningTime = timer;
-			questionTimer = setInterval(timeTracker, 1000);
-			document.getElementById('timer_display').innerHTML = timer;
-			break;
-		}
-		else {
-			questionFailed();
-		}
+	if (questionStartTeam !== teams[currTeamIndex]) {
+		setNextTeam();
+	}
+	else {
+		currTeamIndex++;
+		setNextTeam();
+	}
+}
+
+function setNextTeam () {
+	if (currTeamIndex < teams.length) {
+		currTeam = teams[currTeamIndex];
+		runningTime = timer;
+		questionTimer = setInterval(timeTracker, 1000);
+		document.getElementById('timer_display').innerHTML = timer;
+		currTeamIndex++;
+	}
+	else {
+		questionFailed();
 	}
 }
 
