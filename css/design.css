@@ -57,6 +57,15 @@
 	margin-left: 1cm;
 	margin-right: 1cm;
 }
+#board_div_header_table {
+	width: 100%;
+}
+#board_div_header_left {
+	text-align: left;
+}
+#board_div_header_right {
+	text-align: right;
+}
 #board_game_div {
 	text-align: center;
 }

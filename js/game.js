@@ -71,6 +71,7 @@ function startGame () {
 	
 	document.getElementById('setup_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
+	updateScoreBoard();
 	
 	currTeam = teams[0];
 	document.getElementById("board_div_current_team").innerHTML = "Team " + currTeam + " choose a question";
@@ -106,9 +107,24 @@ function questionAnswered () {
 	document.getElementById('question_text').innerHTML = "";
 	document.getElementById('question_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
+	updateScoreBoard();
 }
 
 function restartGame () {
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('setup_div').style.display = "block";
+}
+
+function updateScoreBoard () {
+	var scoreText = "";
+	
+	for (var i = 0; i < teams.length; i++) {
+		if (i > 0) {
+			scoreText = scoreText + " | " + teams[i] + ": " + scores[i];
+		}
+		else {
+			scoreText = scoreText + teams[i] + ": " + scores[i];
+		}
+	}
+	document.getElementById('game_score_display').innerHTML = scoreText;
 }

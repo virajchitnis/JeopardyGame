@@ -57,8 +57,17 @@
 			<div id="board_div">
 				<div id="board_div_header">
 					<p>&nbsp;</p>
-					<button onclick="restartGame()">Restart game</button>
-					<button>End game</button>
+					<table id="board_div_header_table">
+						<tr>
+							<td id="board_div_header_left">
+								<button onclick="restartGame()">Restart game</button>
+								<button>End game</button>
+							</td>
+							<td id="board_div_header_right">
+								<p id="game_score_display">Scores</p>
+							</td>
+						</tr>
+					</table>
 					<div>
 						<p>&nbsp;</p>
 						<div id="board_game_div">
