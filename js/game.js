@@ -122,6 +122,17 @@ function questionAnswered () {
 }
 
 function questionFailed() {
+	for (var i = 0; i < teams.length; i++) {
+		if (questionStartTeam === teams[i]) {
+			if ((i+1) < teams.length) {
+				currTeam = teams[i+1];
+			}
+			else {
+				currTeam = teams[0];
+			}
+			break;
+		}
+	}
 	showGameBoard();
 	clearInterval(questionTimer);
 	updateScoreBoard();
