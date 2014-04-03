@@ -362,7 +362,7 @@
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<h3>30</h3>
+				<h3 id="timer_display">30</h3>
 				<p>&nbsp;</p>
 				<button onclick="questionAnswered()">Answered</button>
 			</div>

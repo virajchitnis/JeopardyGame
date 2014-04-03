@@ -6,6 +6,9 @@ var scores;			// Array for keeping track of the scores of all teams
 var currTeam;		// Keeps track of the team thats currently answering
 var lastWinTeam;	// Keeps track of the team that won the last round
 
+var questionTimer;	// Timer object that will keep time for questions
+var runningTime;	// Time remaining for question
+
 function addTeam () {
 	var parent = document.getElementById('team_form');
 	var previous = parseInt(parent.elements[parent.length - 1].name);
@@ -101,18 +104,59 @@ function selectQuestion (category, weight, elementID) {
 	document.getElementById(elementID).innerHTML = "<p>&nbsp;</p><h3>&nbsp;</h3><p>&nbsp;</p>";
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('question_div').style.display = "block";
+	document.getElementById('timer_display').innerHTML = timer;
+	
+	runningTime = timer;
+	questionTimer = setInterval(timeTracker, 1000);
 }
 
 function questionAnswered () {
 	document.getElementById('question_text').innerHTML = "";
 	document.getElementById('question_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
+	clearInterval(questionTimer);
+	updateScoreBoard();
+}
+
+function questionFailed() {
+	document.getElementById('question_text').innerHTML = "";
+	document.getElementById('question_div').style.display = "none";
+	document.getElementById('board_div').style.display = "block";
+	clearInterval(questionTimer);
 	updateScoreBoard();
 }
 
 function restartGame () {
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('setup_div').style.display = "block";
+}
+
+function timeTracker () {
+	runningTime--;
+	
+	if (runningTime > 0) {
+		document.getElementById('timer_display').innerHTML = runningTime.toString();
+	}
+	else {
+		clearInterval(questionTimer);
+		switchTeam();
+	}
+}
+
+function switchTeam () {
+	for (var i = 0; i < teams.length; i++) {
+		alert(teams[i] === currTeam);
+		if ((currTeam === teams[i]) && ((i+1) < teams.length)) {
+			currTeam = teams[i+1];
+			runningTime = timer;
+			questionTimer = setInterval(timeTracker, 1000);
+			document.getElementById('timer_display').innerHTML = timer;
+			break;
+		}
+		else {
+			questionFailed();
+		}
+	}
 }
 
 function updateScoreBoard () {
