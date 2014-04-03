@@ -159,31 +159,39 @@ function timeTracker () {
 	}
 	else {
 		clearInterval(questionTimer);
-		switchTeam();
-	}
-}
-
-function switchTeam () {
-	if (questionStartTeam !== teams[currTeamIndex]) {
-		setNextTeam();
-	}
-	else {
-		currTeamIndex++;
 		setNextTeam();
 	}
 }
 
 function setNextTeam () {
-	if (currTeamIndex < teams.length) {
-		currTeam = teams[currTeamIndex];
-		updateCurrentTeamQuestion();
-		runningTime = timer;
-		questionTimer = setInterval(timeTracker, 1000);
-		document.getElementById('timer_display').innerHTML = timer;
-		currTeamIndex++;
-	}
-	else {
-		questionFailed();
+	for (var i = 0; i < teams.length; i++) {
+		if (currTeam === teams[i]) {
+			if ((i+1) < teams.length) {
+				if ((teams[i+1]) !== questionStartTeam) {
+					currTeam = teams[i+1];
+					updateCurrentTeamQuestion();
+					runningTime = timer;
+					questionTimer = setInterval(timeTracker, 1000);
+					document.getElementById('timer_display').innerHTML = timer;
+				}
+				else {
+					questionFailed();
+				}
+			}
+			else {
+				if ((teams[0]) !== questionStartTeam) {
+					currTeam = teams[0];
+					updateCurrentTeamQuestion();
+					runningTime = timer;
+					questionTimer = setInterval(timeTracker, 1000);
+					document.getElementById('timer_display').innerHTML = timer;
+				}
+				else {
+					questionFailed();
+				}
+			}
+			break;
+		}
 	}
 }
 
