@@ -169,10 +169,7 @@ function setNextTeam () {
 			if ((i+1) < teams.length) {
 				if ((teams[i+1]) !== questionStartTeam) {
 					currTeam = teams[i+1];
-					updateCurrentTeamQuestion();
-					runningTime = timer;
-					questionTimer = setInterval(timeTracker, 1000);
-					document.getElementById('timer_display').innerHTML = timer;
+					startNextTeam();
 				}
 				else {
 					questionFailed();
@@ -181,10 +178,7 @@ function setNextTeam () {
 			else {
 				if ((teams[0]) !== questionStartTeam) {
 					currTeam = teams[0];
-					updateCurrentTeamQuestion();
-					runningTime = timer;
-					questionTimer = setInterval(timeTracker, 1000);
-					document.getElementById('timer_display').innerHTML = timer;
+					startNextTeam();
 				}
 				else {
 					questionFailed();
@@ -193,6 +187,13 @@ function setNextTeam () {
 			break;
 		}
 	}
+}
+
+function startNextTeam () {
+	updateCurrentTeamQuestion();
+	runningTime = timer;
+	questionTimer = setInterval(timeTracker, 1000);
+	document.getElementById('timer_display').innerHTML = timer;
 }
 
 function updateScoreBoard () {
