@@ -109,6 +109,7 @@ function selectQuestion (category, weight, elementID) {
 	
 	currTeamIndex = 0;
 	questionStartTeam = currTeam;
+	document.getElementById('question_team_text').innerHTML = "Team " + currTeam.name + "'s turn";
 	
 	runningTime = timer;
 	questionTimer = setInterval(timeTracker, 1000);
@@ -160,6 +161,7 @@ function switchTeam () {
 function setNextTeam () {
 	if (currTeamIndex < teams.length) {
 		currTeam = teams[currTeamIndex];
+		document.getElementById('question_team_text').innerHTML = "Team " + currTeam.name + "'s turn";
 		runningTime = timer;
 		questionTimer = setInterval(timeTracker, 1000);
 		document.getElementById('timer_display').innerHTML = timer;

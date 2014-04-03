@@ -351,7 +351,7 @@
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<p>&nbsp;</p>
+				<h2 id="question_team_text">The question</h2>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
