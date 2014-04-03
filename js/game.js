@@ -116,19 +116,22 @@ function selectQuestion (category, weight, elementID) {
 }
 
 function questionAnswered () {
-	document.getElementById('question_text').innerHTML = "";
-	document.getElementById('question_div').style.display = "none";
-	document.getElementById('board_div').style.display = "block";
+	showGameBoard();
 	clearInterval(questionTimer);
 	updateScoreBoard();
 }
 
 function questionFailed() {
-	document.getElementById('question_text').innerHTML = "";
-	document.getElementById('question_div').style.display = "none";
-	document.getElementById('board_div').style.display = "block";
+	showGameBoard();
 	clearInterval(questionTimer);
 	updateScoreBoard();
+}
+
+function showGameBoard() {
+	document.getElementById('question_text').innerHTML = "";
+	document.getElementById('question_team_text').innerHTML = "";
+	document.getElementById('question_div').style.display = "none";
+	document.getElementById('board_div').style.display = "block";
 }
 
 function restartGame () {
