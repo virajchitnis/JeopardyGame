@@ -78,7 +78,7 @@ function startGame () {
 	updateScoreBoard();
 	
 	currTeam = teams[0];
-	document.getElementById("board_div_current_team").innerHTML = "Team " + currTeam.name + " choose a question";
+	updateCurrentTeamOnBoard();
 	
 	var i2 = 0;
 	for (var i = 1; i <= 6; i++) {
@@ -109,7 +109,7 @@ function selectQuestion (category, weight, elementID) {
 	
 	currTeamIndex = 0;
 	questionStartTeam = currTeam;
-	document.getElementById('question_team_text').innerHTML = "Team " + currTeam.name + "'s turn";
+	updateCurrentTeamQuestion();
 	
 	runningTime = timer;
 	questionTimer = setInterval(timeTracker, 1000);
@@ -130,6 +130,7 @@ function questionFailed() {
 function showGameBoard() {
 	document.getElementById('question_text').innerHTML = "";
 	document.getElementById('question_team_text').innerHTML = "";
+	updateCurrentTeamOnBoard();
 	document.getElementById('question_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
 }
@@ -164,7 +165,7 @@ function switchTeam () {
 function setNextTeam () {
 	if (currTeamIndex < teams.length) {
 		currTeam = teams[currTeamIndex];
-		document.getElementById('question_team_text').innerHTML = "Team " + currTeam.name + "'s turn";
+		updateCurrentTeamQuestion();
 		runningTime = timer;
 		questionTimer = setInterval(timeTracker, 1000);
 		document.getElementById('timer_display').innerHTML = timer;
@@ -187,4 +188,12 @@ function updateScoreBoard () {
 		}
 	}
 	document.getElementById('game_score_display').innerHTML = scoreText;
+}
+
+function updateCurrentTeamOnBoard () {
+	document.getElementById("board_div_current_team").innerHTML = currTeam.name + " choose a question";
+}
+
+function updateCurrentTeamQuestion () {
+	document.getElementById('question_team_text').innerHTML = "Team " + currTeam.name + "'s turn";
 }
