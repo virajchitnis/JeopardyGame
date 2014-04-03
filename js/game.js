@@ -1,7 +1,6 @@
 var questions;		// Array that will contain the parsed JSON
 var teams;			// Array that will contain the list of all playing teams
 var timer;			// Variable containing the amount of time per team per question
-var scores;			// Array for keeping track of the scores of all teams
 
 var currTeam;		// Keeps track of the team thats currently answering
 var lastWinTeam;	// Keeps track of the team that won the last round
@@ -41,7 +40,6 @@ function startGame () {
 	timer = parseInt(document.getElementById('timer_form').elements[0].value);
 	teamForm = document.getElementById('team_form');
 	teams = new Array();
-	scores = new Array();
 	
 	if (isNaN(timer) == true) {
 		document.getElementById('setup_alert_text').innerHTML = "Please enter the time in seconds.";
@@ -50,10 +48,10 @@ function startGame () {
 	
 	var teamCounter = 0;
 	for (var i = 0; i < teamForm.length; i++) {
-		var currTeam = teamForm.elements[i].value;
-		if (currTeam !== "") {
-			var currScore = 0;
-			scores.push(currScore);
+		var currTeam = new Team();
+		currTeam.name = teamForm.elements[i].value;
+		if (currTeam.name !== "") {
+			currTeam.score = 0;
 			teams.push(currTeam);
 			teamCounter++;
 		}
@@ -77,7 +75,7 @@ function startGame () {
 	updateScoreBoard();
 	
 	currTeam = teams[0];
-	document.getElementById("board_div_current_team").innerHTML = "Team " + currTeam + " choose a question";
+	document.getElementById("board_div_current_team").innerHTML = "Team " + currTeam.name + " choose a question";
 	
 	var i2 = 0;
 	for (var i = 1; i <= 6; i++) {
@@ -145,7 +143,7 @@ function timeTracker () {
 
 function switchTeam () {
 	for (var i = 0; i < teams.length; i++) {
-		alert(teams[i] === currTeam);
+		alert(currTeam === teams[i]);
 		if ((currTeam === teams[i]) && ((i+1) < teams.length)) {
 			currTeam = teams[i+1];
 			runningTime = timer;
@@ -164,10 +162,10 @@ function updateScoreBoard () {
 	
 	for (var i = 0; i < teams.length; i++) {
 		if (i > 0) {
-			scoreText = scoreText + " | " + teams[i] + ": " + scores[i];
+			scoreText = scoreText + " | " + teams[i].name + ": " + teams[i].score.toString();
 		}
 		else {
-			scoreText = scoreText + teams[i] + ": " + scores[i];
+			scoreText = scoreText + teams[i].name + ": " + teams[i].score.toString();
 		}
 	}
 	document.getElementById('game_score_display').innerHTML = scoreText;

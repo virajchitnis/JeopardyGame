@@ -4,3 +4,8 @@ function Question () {
 	this.answer;
 	this.weight;
 }
+
+function Team () {
+	this.name;
+	this.score;
+}
