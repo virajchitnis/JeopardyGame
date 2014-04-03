@@ -48,11 +48,11 @@ function startGame () {
 	
 	var teamCounter = 0;
 	for (var i = 0; i < teamForm.length; i++) {
-		var currTeam = new Team();
-		currTeam.name = teamForm.elements[i].value;
-		if (currTeam.name !== "") {
-			currTeam.score = 0;
-			teams.push(currTeam);
+		var tempTeam = new Team();
+		tempTeam.name = teamForm.elements[i].value;
+		if (tempTeam.name !== "") {
+			tempTeam.score = 0;
+			teams.push(tempTeam);
 			teamCounter++;
 		}
 	}
@@ -143,7 +143,6 @@ function timeTracker () {
 
 function switchTeam () {
 	for (var i = 0; i < teams.length; i++) {
-		alert(currTeam === teams[i]);
 		if ((currTeam === teams[i]) && ((i+1) < teams.length)) {
 			currTeam = teams[i+1];
 			runningTime = timer;
