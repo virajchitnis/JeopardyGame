@@ -80,7 +80,19 @@ function startGame () {
 }
 
 function selectQuestion (category, weight, elementID) {
-	document.getElementById('question_text').innerHTML = "You selected: " + weight + " points from category " + category;
+	var currCategory = document.getElementById("board_game_cat" + category).innerHTML;
+	
+	var tempElement = document.createElement('div');
+	tempElement.innerHTML = document.getElementById("board_game_box" + category + "" + weight).innerHTML;
+	var currWeight = tempElement.childNodes[1].innerHTML;
+	
+	for (var i = 0; i < questions.length; i++) {
+		if ((questions[i].category == currCategory) && (questions[i].weight == currWeight)) {
+			document.getElementById('question_text').innerHTML = questions[i].question;
+			break;
+		}
+	}
+	
 	document.getElementById(elementID).className = "board_game_box_selected";
 	document.getElementById(elementID).innerHTML = "<p>&nbsp;</p><h3>&nbsp;</h3><p>&nbsp;</p>";
 	document.getElementById('board_div').style.display = "none";
