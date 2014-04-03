@@ -59,9 +59,12 @@
 					<p>&nbsp;</p>
 					<button onclick="restartGame()">Restart game</button>
 					<button>End game</button>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
 					<div>
+						<p>&nbsp;</p>
+						<div id="board_game_div">
+							<h3 id="board_div_current_team">Current team</h3>
+						</div>
+						<p>&nbsp;</p>
 						<table id="board_game_table">
 							<tr>
 								<th class="board_game_table_box">

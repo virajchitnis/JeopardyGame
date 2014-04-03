@@ -72,6 +72,9 @@ function startGame () {
 	document.getElementById('setup_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
 	
+	currTeam = teams[0];
+	document.getElementById("board_div_current_team").innerHTML = "Team " + currTeam + " choose a question";
+	
 	var i2 = 0;
 	for (var i = 1; i <= 6; i++) {
 		document.getElementById('board_game_cat' + i).innerHTML = questions[i2].category;
