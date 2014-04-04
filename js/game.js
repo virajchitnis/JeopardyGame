@@ -11,6 +11,7 @@ var runningTime;	// Time remaining for question
 var questionStartTeam;	// Team that chose the question
 var currTeamIndex;		// Index in array of the current team
 var currQuestionWeight;	// Points for the chosen question
+var currAnswer;			// Answer for the current question
 
 function addTeam () {
 	var parent = document.getElementById('team_form');
@@ -98,6 +99,7 @@ function selectQuestion (category, weight, elementID) {
 	for (var i = 0; i < questions.length; i++) {
 		if ((questions[i].category == currCategory) && (questions[i].weight == currWeight)) {
 			document.getElementById('question_text').innerHTML = questions[i].question;
+			currAnswer = questions[i].answer;
 			break;
 		}
 	}
@@ -119,7 +121,7 @@ function selectQuestion (category, weight, elementID) {
 
 function questionAnswered () {
 	currTeam.score += parseInt(currQuestionWeight);
-	showGameBoard();
+	showAnswer();
 	clearInterval(questionTimer);
 	updateScoreBoard();
 }
@@ -136,16 +138,23 @@ function questionFailed() {
 			break;
 		}
 	}
-	showGameBoard();
+	showAnswer();
 	clearInterval(questionTimer);
 	updateScoreBoard();
 }
 
-function showGameBoard() {
+function showAnswer () {
 	document.getElementById('question_text').innerHTML = "";
 	document.getElementById('question_team_text').innerHTML = "";
-	updateCurrentTeamOnBoard();
+	document.getElementById('answer_text').innerHTML = currAnswer;
 	document.getElementById('question_div').style.display = "none";
+	document.getElementById('answer_div').style.display = "block";
+}
+
+function showGameBoard () {
+	document.getElementById('answer_text').innerHTML = "";
+	updateCurrentTeamOnBoard();
+	document.getElementById('answer_div').style.display = "none";
 	document.getElementById('board_div').style.display = "block";
 }
 

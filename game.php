@@ -366,6 +366,27 @@
 				<p>&nbsp;</p>
 				<button onclick="questionAnswered()">Answered</button>
 			</div>
+			<div id="answer_div">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h2 id="answer_text">The answer</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<button onclick="showGameBoard()">Done</button>
+			</div>
+			<p>&nbsp;</p>
 			<p id="hidden_json"><?php echo $json; ?></p>
 			<div class="push"></div>
 		</div>
