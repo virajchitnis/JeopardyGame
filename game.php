@@ -60,8 +60,8 @@
 					<table id="board_div_header_table">
 						<tr>
 							<td id="board_div_header_left">
-								<button onclick="location.reload();">Restart game</button>
-								<button>End game</button>
+								<button onclick="restartGame()">Restart game</button>
+								<button onclick="showEndGame()">End game</button>
 							</td>
 							<td id="board_div_header_right">
 								<p id="game_score_display">Scores</p>
@@ -385,6 +385,26 @@
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<button onclick="showGameBoard()">Done</button>
+			</div>
+			<div id="end_game_div">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h2 id="endgame_text">The answer</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<button onclick="restartGame()">Restart game</button>
 			</div>
 			<p>&nbsp;</p>
 			<p id="hidden_json"><?php echo $json; ?></p>

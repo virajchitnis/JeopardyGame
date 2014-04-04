@@ -158,6 +158,16 @@ function showGameBoard () {
 	document.getElementById('board_div').style.display = "block";
 }
 
+function showEndGame () {
+	document.getElementById('endgame_text').innerHTML = "Team has won! Congratulations!" + "<br>" + "You scored xxx points";
+	document.getElementById('board_div').style.display = "none";
+	document.getElementById('end_game_div').style.display = "block";
+}
+
+function restartGame () {
+	location.reload();
+}
+
 function timeTracker () {
 	runningTime--;
 	

@@ -57,6 +57,10 @@
 	display: none;
 	text-align: center;
 }
+#end_game_div {
+	display: none;
+	text-align: center;
+}
 #board_div_header {
 	margin-left: 1cm;
 	margin-right: 1cm;
