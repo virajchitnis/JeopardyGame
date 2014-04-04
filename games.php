@@ -30,6 +30,7 @@
 						<th>Name</th>
 						<th>Author</th>
 						<th>Link</th>
+						<th>Download as Text</th>
 					</tr>
 					<?php
 						while($sql->fetch()){
@@ -38,6 +39,7 @@
 								<td><?php echo $name; ?></td>
 								<td><?php echo $author; ?></td>
 								<td><a href="game.php?key=<?php echo $json_hash; ?>">Play</a></td>
+								<td><button class="game_buttons">Download</button> (beta)</td>
 							</tr>
 					<?php
 						}

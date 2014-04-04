@@ -202,14 +202,15 @@ input[type=submit] {
 	background: #9A2EFE;
 	padding: 5px;
 	border: 2px solid black;
-	width: calc(100% / 3);
+	width: calc(100% / 4);
 }
 #games_table td {
+	text-align: center;
 	background: #E0E0F8;
 	padding: 5px;
 	border: 2px solid black;
 	font-size:10pt;
-	width: calc(100% / 3);
+	width: calc(100% / 4);
 }
 .footer, .push {
 	height: 2em;
