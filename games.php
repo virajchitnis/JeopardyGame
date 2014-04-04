@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/design.css">
 		<title>All Games</title>
 	</head>
-	<body>
+	<body class="body">
 		<div class="wrapper">
 			<?php include('common/header.php'); ?>
 			<div id="games_body">
