@@ -1,8 +1,11 @@
 * {
 	margin: 0;
 }
-	html, body {
+html, body {
 	height: 100%;
+}
+p, h1, h2, h3 {
+	font-family:"Courier New", Courier, monospace;
 }
 .wrapper {
 	min-height: 100%;
