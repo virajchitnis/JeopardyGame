@@ -12,15 +12,38 @@
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<div id="welcome_body">
-				<table id="welcome_table">
+				<div id="welcome_choice_div">
+					<table id="welcome_choice_table">
+						<tr>
+							<td class="welcome_choice_table_sides"></td>
+							<td class="welcome_choice_table_center">
+								<div class="welcome_choice_buttons" onclick="showCreatePage()">
+									<p>&nbsp;</p>
+									<p><b>Create</b></p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+							<td class="welcome_choice_table_center">
+								<div class="welcome_choice_buttons" onclick="openLink('games.php')">
+									<p>&nbsp;</p>
+									<p><b>Play</b></p>
+									<p>&nbsp;</p>
+								</div>
+							</td>
+							<td class="welcome_choice_table_sides"></td>
+						</tr>
+					</table>
+				</div>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<table id="welcome_info_table">
 					<tr>
-						<td class="welcome_table_data">
-							<p>Play jeopardy online.</p>
+						<td class="welcome_info_table_sides"></td>
+						<td id="welcome_info_table_center">
+							<p><b>Create</b></p>
+							<p><b>Play</b></p>
 						</td>
-						<td class="welcome_table_data">
-							<button onclick="showCreatePage()">Create question bank</button>
-							<button onclick="openLink('games.php')">Play game</button>
-						</td>
+						<td class="welcome_info_table_sides"></td>
 					</tr>
 				</table>
 			</div>

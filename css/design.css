@@ -7,6 +7,9 @@ html, body {
 p, h1, h2, h3 {
 	font-family:"Courier New", Courier, monospace;
 }
+p {
+	font-size: 14pt;
+}
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -20,12 +23,39 @@ p, h1, h2, h3 {
 #welcome_body {
 	width: 100%;
 }
-#welcome_table {
+#welcome_choice_div {
+	width: 100%;
+	text-align: center;
+}
+#welcome_choice_table {
+	width: 100%;
+	text-align: center;
+}
+.welcome_choice_buttons {
+	background-color: #9A2EFE;
+	border:2px solid;
+	border-radius:25px;
+	border-color: white;
+}
+.welcome_choice_buttons:hover {
+	border:2px solid;
+	border-color: black;
+	box-shadow: 2px 2px 1px #888888;
+}
+.welcome_choice_table_sides {
+	width: 20%;
+}
+.welcome_choice_table_center {
+	width: 30%;
+}
+#welcome_info_table {
 	width: 100%;
 }
-.welcome_table_data {
-	text-align: center;
-	width: 50%;
+#welcome_info_table_center {
+	width: 80%;
+}
+.welcome_info_table_sides {
+	width: 10%;
 }
 #creategame_body {
 	display: none;
