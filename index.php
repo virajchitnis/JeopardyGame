@@ -6,7 +6,7 @@
 		<script src="js/openlink.js"></script>
 		<title>Welcome to Jeopardy!</title>
 	</head>
-	<body>
+	<body class="body">
 		<div class="wrapper">
 			<?php include('common/header.php'); ?>
 			<p>&nbsp;</p>
@@ -41,7 +41,9 @@
 						<td class="welcome_info_table_sides"></td>
 						<td id="welcome_info_table_center">
 							<p><b>Create</b></p>
+							<p class="welcome_info_text">Create a new question bank. This must be done before a game can be played.</p>
 							<p><b>Play</b></p>
+							<p class="welcome_info_text">Play a game. Choose a question bank from the list of question banks already created by you or someone else and start the game.</p>
 						</td>
 						<td class="welcome_info_table_sides"></td>
 					</tr>

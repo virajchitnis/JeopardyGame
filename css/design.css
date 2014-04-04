@@ -10,6 +10,9 @@ p, h1, h2, h3 {
 p {
 	font-size: 14pt;
 }
+.body {
+	background-color: #F2F2F2;
+}
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -35,7 +38,7 @@ p {
 	background-color: #9A2EFE;
 	border:2px solid;
 	border-radius:25px;
-	border-color: white;
+	border-color: #F2F2F2;
 }
 .welcome_choice_buttons:hover {
 	border:2px solid;
@@ -56,6 +59,9 @@ p {
 }
 .welcome_info_table_sides {
 	width: 10%;
+}
+.welcome_info_text {
+	margin-left: 1cm;
 }
 #creategame_body {
 	display: none;
