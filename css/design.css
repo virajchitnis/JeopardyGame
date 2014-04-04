@@ -4,11 +4,14 @@
 html, body {
 	height: 100%;
 }
-p, h1, h2, h3, table {
+p, h1, h2, h3, table, button, input {
 	font-family:"Courier New", Courier, monospace;
 }
 p, table {
 	font-size: 14pt;
+}
+input, button {
+	font-size: 12pt;
 }
 .body {
 	background-color: #F2F2F2;
@@ -64,10 +67,36 @@ p, table {
 	margin-left: 1cm;
 }
 #creategame_body {
-	display: none;
-	width: 100%;
 	margin-left: 1cm;
 	margin-right: 1cm;
+}
+.question_form_spaces {
+	font-size: 3px;
+}
+input[type=text] {
+	padding: 5px;
+	border: 2px solid #ccc;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+input[type=text]:focus {
+	border-color: #333;
+}
+input[type=submit] {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#back_button {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 #download_body {
 	width: 100%;
