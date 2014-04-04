@@ -9,8 +9,6 @@
 	<body class="body">
 		<div class="wrapper">
 			<?php include('common/header.php'); ?>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
 			<div id="welcome_body">
 				<div id="welcome_choice_div">
 					<table id="welcome_choice_table">
