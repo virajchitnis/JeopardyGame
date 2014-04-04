@@ -49,8 +49,8 @@
 					<input type="text" name="2" placeholder="Team 2" size="25" maxlength="25">
 				</form>
 				<p>&nbsp;</p>
-				<button onclick="addTeam()">Add more</button>
-				<button onclick="startGame()">Start game</button>
+				<button onclick="addTeam()" class="game_buttons">Add more</button>
+				<button onclick="startGame()" class="game_buttons">Start game</button>
 				<p>&nbsp;</p>
 				<p id="setup_alert_text">&nbsp;</p>
 			</div>
@@ -60,8 +60,8 @@
 					<table id="board_div_header_table">
 						<tr>
 							<td id="board_div_header_left">
-								<button onclick="restartGame()">Restart game</button>
-								<button onclick="showEndGame()">End game</button>
+								<button onclick="restartGame()" class="game_buttons">Restart game</button>
+								<button onclick="showEndGame()" class="game_buttons">End game</button>
 							</td>
 							<td id="board_div_header_right">
 								<p id="game_score_display">Scores</p>

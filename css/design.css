@@ -114,6 +114,14 @@ input[type=submit] {
 #setup_div {
 	text-align: center;
 }
+.game_buttons {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
 #board_div {
 	display: none;
 }
