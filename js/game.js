@@ -159,13 +159,23 @@ function showGameBoard () {
 }
 
 function showEndGame () {
-	document.getElementById('endgame_text').innerHTML = "Team has won! Congratulations!" + "<br>" + "You scored xxx points";
+	document.getElementById('endgame_text').innerHTML = getWinner().name + " has won! Congratulations!" + "<br>" + "You scored " + getWinner().score.toString(); + " points";
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('end_game_div').style.display = "block";
 }
 
 function restartGame () {
 	location.reload();
+}
+
+function getWinner () {
+	var winner = teams[0];
+	for (var i = 0; i < teams.length; i++) {
+		if (teams[i].score > winner.score) {
+			winner = teams[i];
+		}
+	}
+	return winner;
 }
 
 function timeTracker () {
