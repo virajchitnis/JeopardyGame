@@ -10,6 +10,7 @@ var runningTime;	// Time remaining for question
 
 var questionStartTeam;	// Team that chose the question
 var currTeamIndex;		// Index in array of the current team
+var currQuestionWeight;	// Points for the chosen question
 
 function addTeam () {
 	var parent = document.getElementById('team_form');
@@ -110,12 +111,14 @@ function selectQuestion (category, weight, elementID) {
 	currTeamIndex = 0;
 	questionStartTeam = currTeam;
 	updateCurrentTeamQuestion();
+	currQuestionWeight = currWeight;
 	
 	runningTime = timer;
 	questionTimer = setInterval(timeTracker, 1000);
 }
 
 function questionAnswered () {
+	currTeam.score += parseInt(currQuestionWeight);
 	showGameBoard();
 	clearInterval(questionTimer);
 	updateScoreBoard();
