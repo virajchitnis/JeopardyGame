@@ -49,7 +49,7 @@
 					<input type="text" name="2" placeholder="Team 2" size="25" maxlength="25">
 				</form>
 				<p>&nbsp;</p>
-				<button onclick="addTeam()" class="game_buttons">Add more</button>
+				<button onclick="addTeam()" class="game_buttons">Add more teams</button>
 				<button onclick="startGame()" class="game_buttons">Start game</button>
 				<p>&nbsp;</p>
 				<p id="setup_alert_text">&nbsp;</p>
