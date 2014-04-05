@@ -159,7 +159,7 @@ function showGameBoard () {
 }
 
 function showEndGame () {
-	document.getElementById('endgame_text').innerHTML = getWinner().name + " has won! Congratulations!" + "<br>" + "You scored " + getWinner().score.toString(); + " points";
+	document.getElementById('endgame_text').innerHTML = getWinner().name + " has won! Congratulations!" + "<br>" + "You scored " + getWinner().score.toString() + " points";
 	document.getElementById('board_div').style.display = "none";
 	document.getElementById('end_game_div').style.display = "block";
 }
