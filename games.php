@@ -39,7 +39,7 @@
 							<tr>
 								<td><?php echo $name; ?></td>
 								<td><?php echo $author; ?></td>
-								<td><a href="game.php?key=<?php echo $json_hash; ?>">Play</a></td>
+								<td><a href="game.php?key=<?php echo $json_hash; ?>"><button class="game_buttons">Play</button></a></td>
 								<td><button class="game_buttons" onclick="openLink('download.php?key=<?php echo $json_hash; ?>')">Download</button></td>
 							</tr>
 					<?php
@@ -49,6 +49,11 @@
 						$db->close();
 					?>
 				</table>
+				<p>&nbsp;</p>
+				<p><b>Play</b></p>
+				<p class="games_info_text">Click the play button to play the respective game. You can also right click (two finger click on Mac) the play button and copy the link address. This address is the direct link to that particular game and can be shared with students so that they can play the game themselves if they wish to.</p>
+				<p><b>Download</b></p>
+				<p class="games_info_text">The download button outputs the respective question bank in human readable plain text format. This can then be copied into a Word document to share with students or the link for the plain text document can be copied and shared, similar to the play button.</p>
 			</div>
 			<p id="hidden_json"><?php echo $json; ?></p>
 			<div class="push"></div>

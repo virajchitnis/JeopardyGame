@@ -212,6 +212,9 @@ input[type=submit] {
 	font-size:10pt;
 	width: calc(100% / 4);
 }
+.games_info_text {
+	margin-left: 1cm;
+}
 .footer, .push {
 	height: 2em;
 }
