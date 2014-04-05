@@ -22,9 +22,22 @@
 		$sql->free_result();
 		$db->close();
 		
-		echo "Game: ".$name."<br>";
-		echo "Author: ".$author."<br>";
+		echo "<b>Game:</b> ".$name."<br>";
+		echo "<b>Author:</b> ".$author."<br>";
 		echo " <br>";
-		echo $json;
+		$questions = json_decode(utf8_encode($json), true);
+		
+		for ($i = 0; $i < count($questions); $i++) {
+			echo "<b>Points:</b> ".$questions[$i]['weight']."<br>";
+			echo "<b>Question:</b> ".$questions[$i]['question']."<br>";
+			echo "<b>Answer:</b> ".$questions[$i]['answer'];
+			
+			if ($i == (count($questions) - 1)) {
+				echo "<br>";
+			}
+			else {
+				echo "<br><br>";
+			}
+		}
 	}
 ?>
