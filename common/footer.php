@@ -1,6 +1,6 @@
 <div class="footer">
 	<p class="footer_text">
-		Jeopardy
+		Jeopardy!
 		<span class="footer_text">
 			<?php
 			if (!file_exists('deployed')) {
