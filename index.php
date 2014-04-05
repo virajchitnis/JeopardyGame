@@ -1,8 +1,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/design.css">
-		<script src="js/index.js"></script>
-		<script src="js/types.js"></script>
 		<script src="js/openlink.js"></script>
 		<title>Welcome to Jeopardy!</title>
 	</head>

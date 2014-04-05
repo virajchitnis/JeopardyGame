@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/design.css">
-		<script src="js/index.js"></script>
+		<script src="js/create.js"></script>
 		<script src="js/types.js"></script>
 		<script src="js/openlink.js"></script>
 		<title>Create a question bank - Jeopardy!</title>
