@@ -7,7 +7,7 @@
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
-		<title>Welcome to Jeopardy!</title>
+		<title>Jeopardy! by Viraj Chitnis</title>
 	</head>
 	<body class="body">
 		<div class="wrapper">

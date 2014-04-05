@@ -24,7 +24,7 @@
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
-		<title>All Games</title>
+		<title>All Games - Jeopardy!</title>
 	</head>
 	<body class="body">
 		<div class="wrapper">

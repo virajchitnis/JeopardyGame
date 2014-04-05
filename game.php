@@ -33,7 +33,7 @@
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/game.js"></script>
 		<script src="js/types.js"></script>
-		<title><?php echo $name; ?> - Play Jeopardy!</title>
+		<title><?php echo $name; ?> - Jeopardy!</title>
 	</head>
 	<body id="body_background">
 		<div class="wrapper">

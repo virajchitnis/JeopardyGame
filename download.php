@@ -5,6 +5,7 @@
 				include('common/googleanalytics.php');
 			}
 		?>
+		<title>Download - Jeopardy!</title>
 	</head>
 	<body>
 		<?php
