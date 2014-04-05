@@ -195,6 +195,8 @@
 						<input type="submit" value="Done">
 					</form>
 					<button class="create_game_buttons" onclick="openLink('./')" id="back_button">Go back</button>
+					<p class="create_game_buttons">&nbsp;</p>
+					<p class="create_game_buttons" id="error_messages">&nbsp;</p>
 				</div>
 			</div>
 			<p>&nbsp;</p>
