@@ -45,7 +45,7 @@
 								<td><?php echo $name; ?></td>
 								<td><?php echo $author; ?></td>
 								<td><a href="game.php?key=<?php echo $json_hash; ?>"><button class="game_buttons">Play</button></a></td>
-								<td><button class="game_buttons" onclick="openLink('download.php?key=<?php echo $json_hash; ?>')">Download</button></td>
+								<td><a href="download.php?key=<?php echo $json_hash; ?>"><button class="game_buttons">Download</button></a></td>
 							</tr>
 					<?php
 						}
