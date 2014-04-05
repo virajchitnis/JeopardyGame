@@ -1,5 +1,10 @@
 <html>
 	<head>
+		<?php
+			if (file_exists('deployed')) {
+				include('common/googleanalytics.php');
+			}
+		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/create.js"></script>
 		<script src="js/types.js"></script>

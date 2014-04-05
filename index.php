@@ -1,5 +1,10 @@
 <html>
 	<head>
+		<?php
+			if (file_exists('deployed')) {
+				include('common/googleanalytics.php');
+			}
+		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
 		<title>Welcome to Jeopardy!</title>
