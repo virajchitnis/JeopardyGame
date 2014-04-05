@@ -364,7 +364,7 @@
 				<p>&nbsp;</p>
 				<h3 id="timer_display">30</h3>
 				<p>&nbsp;</p>
-				<button onclick="questionAnswered()">Answered</button>
+				<button class="game_buttons" onclick="questionAnswered()">Answered</button>
 			</div>
 			<div id="answer_div">
 				<p>&nbsp;</p>
@@ -384,7 +384,7 @@
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<button onclick="showGameBoard()">Done</button>
+				<button class="game_buttons" onclick="showGameBoard()">Done</button>
 			</div>
 			<div id="end_game_div">
 				<p>&nbsp;</p>
@@ -404,7 +404,7 @@
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<button onclick="restartGame()">Restart game</button>
+				<button class="game_buttons" onclick="restartGame()">Restart game</button>
 			</div>
 			<p>&nbsp;</p>
 			<p id="hidden_json"><?php echo $json; ?></p>
