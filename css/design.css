@@ -4,10 +4,10 @@
 html, body {
 	height: 100%;
 }
-p, h1, h2, h3, table, button, input {
+p, h1, h2, h3, table, button, input, span {
 	font-family:"Courier New", Courier, monospace;
 }
-p, table {
+p, table, span {
 	font-size: 14pt;
 }
 input, button {

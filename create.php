@@ -14,6 +14,7 @@
 				<p>&nbsp;</p>
 				<form id="name_form">
 					<input type="text" name="name" placeholder="Question bank name" size="25" maxlength="25">
+					<span>&nbsp;by&nbsp;</span>
 					<input type="text" name="author" placeholder="Author name" size="25" maxlength="25">
 				</form>
 				<p>&nbsp;</p>
@@ -23,27 +24,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 					<input type="text" name="category" placeholder="Category">
@@ -51,27 +52,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 					<input type="text" name="category" placeholder="Category">
@@ -79,27 +80,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 					<input type="text" name="category" placeholder="Category">
@@ -107,27 +108,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 					<input type="text" name="category" placeholder="Category">
@@ -135,27 +136,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 					<input type="text" name="category" placeholder="Category">
@@ -163,27 +164,27 @@
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<p class="question_form_spaces">&nbsp;</p>
 					<input type="text" name="question" placeholder="Question" size="50">
 					<input type="text" name="answer" placeholder="Answer" size="25">
-					<input type="text" name="weight" placeholder="Weight" size="6">
+					<input type="text" name="weight" placeholder="Points" size="6">
 					<br>
 					<br>
 				</form>
