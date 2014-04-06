@@ -18,14 +18,14 @@
 						<tr>
 							<td class="welcome_choice_table_sides"></td>
 							<td class="welcome_choice_table_center">
-								<div class="welcome_choice_buttons" onclick="openLink('create.php')">
+								<div class="welcome_choice_buttons" onclick="openLink('create')">
 									<p>&nbsp;</p>
 									<p><b>Create</b></p>
 									<p>&nbsp;</p>
 								</div>
 							</td>
 							<td class="welcome_choice_table_center">
-								<div class="welcome_choice_buttons" onclick="openLink('games.php')">
+								<div class="welcome_choice_buttons" onclick="openLink('games')">
 									<p>&nbsp;</p>
 									<p><b>Play</b></p>
 									<p>&nbsp;</p>
