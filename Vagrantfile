@@ -1,6 +1,7 @@
 hostname = "jeopardy"
 base_box_url = "http://nas/shares/Media/Software/Vagrant%20Boxes/lamp32.box"
 base_box_md5 = "7dcf02016b9648cb1f5882135e9fc172"
+ram = 128
 
 VAGRANTFILE_API_VERSION = "2"
 
@@ -15,6 +16,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--name", hostname]
-    v.customize ["modifyvm", :id, "--memory", 128]
+    v.memory = ram
   end
 end
