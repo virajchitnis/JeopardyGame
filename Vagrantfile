@@ -1,6 +1,6 @@
 hostname = "jeopardy"
-base_box_url = "http://nas/shares/Media/Software/Vagrant%20Boxes/lamp32.box"
-base_box_md5 = "7dcf02016b9648cb1f5882135e9fc172"
+base_box_url = "http://nas/shares/Media/Software/Vagrant%20Boxes/jeopardy.box"
+base_box_md5 = "ba833676e3e6fb1fecd42d14b32b04dd"
 ram = 128
 
 VAGRANTFILE_API_VERSION = "2"
