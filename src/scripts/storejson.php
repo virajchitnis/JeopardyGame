@@ -24,6 +24,8 @@
 		
 		$db->close();
 		
+		exec("sudo mysqldump -u jeopardy -p'jeopardy_pass' jeopardy > /vagrant/savedata.sql");
+		
 		header("Location: ../");
 	}
 	else {
