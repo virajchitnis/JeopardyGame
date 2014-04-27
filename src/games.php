@@ -17,11 +17,6 @@
 			$sql->execute();
 			$sql->bind_result($name, $author, $json_hash);
 		?>
-		<?php
-			if (file_exists('deployed')) {
-				include('common/googleanalytics.php');
-			}
-		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
 		<title>All Games - Jeopardy!</title>

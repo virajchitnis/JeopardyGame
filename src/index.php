@@ -1,9 +1,7 @@
 <html>
 	<head>
 		<?php
-			if (file_exists('deployed')) {
-				include('common/googleanalytics.php');
-			}
+			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/savedata.sql");
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>

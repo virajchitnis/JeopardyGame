@@ -1,10 +1,5 @@
 <html>
 	<head>
-		<?php
-			if (file_exists('deployed')) {
-				include('common/googleanalytics.php');
-			}
-		?>
 		<title>Download - Jeopardy!</title>
 	</head>
 	<body>
