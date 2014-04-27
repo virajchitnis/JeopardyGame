@@ -1,7 +1,12 @@
 <html>
 	<head>
 		<?php
+		if (file_exists("/vagrant/savedata.sql")) {
 			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/savedata.sql");
+		}
+		else {
+			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < scripts/database.sql");
+		}
 		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
