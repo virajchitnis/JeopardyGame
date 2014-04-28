@@ -50,6 +50,22 @@ function startGame {
 	closeApp
 }
 
+function importData {
+	if [[ ${1: -5} == ".jeop" ]]; then
+		echo -n "Importing game data....."
+		cp ${1} savedata.jeop
+		gunzip -S .jeop savedata.jeop
+		mv savedata savedata.sql
+		echo "Done"
+	else
+		echo "Invalid file type, only files with .jeop extension are accepted."
+		echo "Try again"
+		echo "Datafile location: "
+		read LOCATION
+		importData ${LOCATION}
+	fi
+}
+
 BASEDIR=$(dirname $0)
 cd ${BASEDIR}
 
@@ -74,11 +90,14 @@ tput cup 8 15
 echo "2. Import game data"
 
 tput cup 9 15
-echo "3. Exit"
+echo "3. Export game data"
+
+tput cup 10 15
+echo "4. Exit"
 
 tput bold
 tput cup 12 15
-read -p "Enter your choice [1-3] " CHOICE
+read -p "Enter your choice [1-4] " CHOICE
 
 tput clear
 tput sgr0
@@ -89,13 +108,9 @@ if [ ! ${CHOICE} == "\n" ]; then
 		startGame
 	elif [ ${CHOICE} == 2 ]; then
 		echo "You can either enter a location manually, or just simply drag and drop your data file from the Finder."
-		echo "Enter data location: "
+		echo "Datafile location: "
 		read LOCATION
-		echo -n "Importing game data....."
-		cp ${LOCATION} savedata.jeop
-		gunzip -S .jeop savedata.jeop
-		mv savedata savedata.sql
-		echo "Done"
+		importData ${LOCATION}
 		
 		tput clear
 
