@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BASEDIR=$(dirname $0)
+cd ${BASEDIR}
+
 tput clear
 
 tput cup 3 15
@@ -69,6 +72,9 @@ if [ ! ${CHOICE} == "\n" ]; then
 		tput clear
 		tput sgr0
 		tput rc
+		
+		echo "Exited, you may now close this window"
+		echo " "
 	elif [ ${CHOICE} == 2 ]; then
 		echo "You can either enter a location manually, or just simply drag and drop your data file from the Finder."
 		echo "Enter data location: "
