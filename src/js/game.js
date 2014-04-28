@@ -159,23 +159,57 @@ function showGameBoard () {
 }
 
 function showEndGame () {
-	document.getElementById('endgame_text').innerHTML = getWinner().name + " has won! Congratulations!" + "<br>" + "You scored " + getWinner().score.toString() + " points";
-	document.getElementById('board_div').style.display = "none";
-	document.getElementById('end_game_div').style.display = "block";
+	var winners = getWinners();
+	
+	if (winners.length > 1) {
+		var endgame_text = "Its a tie between ";
+		
+		for (var i = 0; i < winners.length; i++) {
+			if (i == 0) {
+				endgame_text += winners[i].name;
+			}
+			else if (i == (winners.length - 1)) {
+				endgame_text += " and " + winners[i].name + "!";
+			}
+			else {
+				endgame_text += ", " + winners[i].name;
+			}
+		}
+		
+		endgame_text += "<br>" + "You scored " + winners[0].score.toString() + " points";
+		document.getElementById('endgame_text').innerHTML = endgame_text;
+		document.getElementById('board_div').style.display = "none";
+		document.getElementById('end_game_div').style.display = "block";
+	}
+	else {
+		document.getElementById('endgame_text').innerHTML = winners[0].name + " has won! Congratulations!" + "<br>" + "You scored " + winners[0].score.toString() + " points";
+		document.getElementById('board_div').style.display = "none";
+		document.getElementById('end_game_div').style.display = "block";
+	}
 }
 
 function restartGame () {
 	location.reload();
 }
 
-function getWinner () {
-	var winner = teams[0];
+function getWinners () {
+	var winners = new Array();
+	winners.push(teams[0]);
+	var winner_index = 0;
 	for (var i = 0; i < teams.length; i++) {
-		if (teams[i].score > winner.score) {
-			winner = teams[i];
+		if (teams[i].score > winners[0].score) {
+			winners[0] = teams[i];
+			winner_index = i;
 		}
 	}
-	return winner;
+	
+	for (var i = 0; i < teams.length; i++) {
+		if ((teams[i].score == winners[0].score) && (i != winner_index)) {
+			winners.push(teams[i]);
+		}
+	}
+	
+	return winners;
 }
 
 function timeTracker () {
