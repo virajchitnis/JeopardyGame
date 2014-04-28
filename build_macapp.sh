@@ -9,10 +9,10 @@ if [ -d binaries/Jeopardy.app ]; then
 fi
 
 mkdir -p binaries/Jeopardy.app/Contents/MacOS
-cp Jeopardy.sh binaries/Jeopardy.app/Contents/MacOS/Jeopardy
+cp macosx_app/Jeopardy.sh binaries/Jeopardy.app/Contents/MacOS/Jeopardy
 
-cp Jeopardy.command binaries/Jeopardy.app/Contents/MacOS/.
-cp bootstrap.sh binaries/Jeopardy.app/Contents/MacOS/.
-cp Vagrantfile binaries/Jeopardy.app/Contents/MacOS/.
+cp macosx_app/Jeopardy.command binaries/Jeopardy.app/Contents/MacOS/.
+cp vagrant/bootstrap.sh binaries/Jeopardy.app/Contents/MacOS/.
+cp vagrant/Vagrantfile binaries/Jeopardy.app/Contents/MacOS/.
 
 cp -r src binaries/Jeopardy.app/Contents/MacOS/.
