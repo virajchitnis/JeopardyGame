@@ -28,6 +28,15 @@
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/game.js"></script>
 		<script src="js/types.js"></script>
+		<meta charset="UTF-8">
+		<meta name="author" content="Viraj Chitnis">
+		<meta name="description" content="Jeopardy! Game">
+		<meta name="copyright" content="&copy; 2014 Viraj Chitnis">
+		<meta name="apple-mobile-web-app-title" content="Jeopardy!">
+		<link rel="apple-touch-icon" href="images/favicon.ico" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="user-scalable=no">
+		<link rel="icon" type="image/ico" href="images/favicon.ico">
 		<title><?php echo $name; ?> - Jeopardy!</title>
 	</head>
 	<body id="body_background">
