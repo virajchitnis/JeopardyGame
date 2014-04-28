@@ -43,7 +43,9 @@
 						<th>Download as Text</th>
 					</tr>
 					<?php
+						$game_count = 0;
 						while($sql->fetch()){
+							$game_count++;
 					?>
 							<tr>
 								<td><?php echo $name; ?></td>
@@ -58,6 +60,13 @@
 						$db->close();
 					?>
 				</table>
+				<?php
+					if ($game_count == 0) {
+				?>
+						<p style="text-align: center">No games yet, <a href="create">create</a> a game.</p>
+				<?php
+					}
+				?>
 				<p>&nbsp;</p>
 				<p><b>Play</b></p>
 				<p class="games_info_text">Click the play button to play the respective game. You can also right click (two finger click on Mac) the play button and copy the link address. This address is the direct link to that particular game and can be shared with students so that they can play the game themselves if they wish to.</p>
