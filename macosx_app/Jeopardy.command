@@ -1,6 +1,27 @@
 #!/bin/bash
 
+function saveToLibrary {
+	echo -n "Saving user data....."
+	
+	if [ -f "savedata.sql" ]; then
+		if [ ! -d "${SAVELOC}" ]; then
+			mkdir -p "${SAVELOC}"
+		fi
+		if [ -f "${SAVEDATA}" ]; then
+			if [ ! cmp -s "savedata.sql" "${SAVEDATA}" ]; then
+				CURRDATE=$(date +"%Y-%m-%d-%H-%M-%S")
+				mv "${SAVEDATA}" "${SAVELOC}/savedata-${CURRDATE}.sql"
+				cp savedata.sql "${SAVEDATA}"
+			fi
+		else
+			cp savedata.sql "${SAVEDATA}"
+		fi
+	fi
+	echo "Done"
+}
+
 function closeApp {
+	saveToLibrary
 	echo "Closing the application....."
 	# Do nothing
 	clear
@@ -57,6 +78,7 @@ function importData {
 		gunzip -S .jeop savedata.jeop
 		mv savedata savedata.sql
 		echo "Done"
+		saveToLibrary
 	else
 		echo "Invalid file type, only files with .jeop extension are accepted."
 		echo "Try again"
@@ -67,7 +89,13 @@ function importData {
 }
 
 BASEDIR=$(dirname $0)
+SAVELOC="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy"
+SAVEDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/savedata.sql"
 cd ${BASEDIR}
+
+if [ -f "${SAVEDATA}" ]; then
+	cp "${SAVEDATA}" savedata.sql
+fi
 
 tput clear
 
