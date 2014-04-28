@@ -1,5 +1,5 @@
 hostname = "jeopardy"
-base_box_url = "http://nas/shares/Media/Software/Vagrant%20Boxes/jeopardy.box"
+base_box_url = "http://s3.amazonaws.com/Vagrant_Boxes_559/jeopardy.box"
 base_box_md5 = "ba833676e3e6fb1fecd42d14b32b04dd"
 ram = 128
 
