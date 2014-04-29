@@ -105,6 +105,13 @@ SAVELOC="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy"
 SAVEDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/savedata.sql"
 cd ${BASEDIR}
 
+if [ -f "updatebox" ]; then
+	if [ -d "${SAVELOC}" ]; then
+		vagrant box remove jeopardy > /dev/null
+		rm updatebox
+	fi
+fi
+
 if [ -f "${SAVEDATA}" ]; then
 	cp "${SAVEDATA}" savedata.sql
 fi
