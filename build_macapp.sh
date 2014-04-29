@@ -27,3 +27,5 @@ if [ ! -d binaries/Jeopardy ]; then
 fi
 
 cp -r binaries/Jeopardy.app binaries/Jeopardy/.
+mkdir binaries/Jeopardy/.background
+cp macosx_app/dmg_background.jpg binaries/Jeopardy/.background/background.jpg
