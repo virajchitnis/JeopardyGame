@@ -41,6 +41,8 @@
 						<th>Author</th>
 						<th>Link</th>
 						<th>Download as Text</th>
+						<th>Edit</th>
+						<th>Delete</th>
 					</tr>
 					<?php
 						$game_count = 0;
@@ -52,6 +54,8 @@
 								<td><?php echo $author; ?></td>
 								<td><a href="game?key=<?php echo $json_hash; ?>"><button class="game_buttons">Play</button></a></td>
 								<td><a href="download?key=<?php echo $json_hash; ?>"><button class="game_buttons">Download</button></a></td>
+								<td><a href="edit?key=<?php echo $json_hash; ?>"><button class="game_buttons">Edit</button></a></td>
+								<td><a href="scripts/delete?key=<?php echo $json_hash; ?>"><button class="game_buttons">Delete</button></a></td>
 							</tr>
 					<?php
 						}
