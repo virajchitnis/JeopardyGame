@@ -1,14 +1,13 @@
 <html>
 	<head>
 		<?php
-		if (file_exists("/vagrant/savedata.sql")) {
-			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/savedata.sql");
-		}
-		elseif (file_exists("savedata.sql")) {
-			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < savedata.sql");
-		}
-		else {
-			exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < scripts/database.sql");
+		if (file_exists("/vagrant")) {
+			if (file_exists("/vagrant/savedata.sql")) {
+				exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/savedata.sql");
+			}
+			else {
+				exec("sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < scripts/database.sql");
+			}
 		}
 		?>
 		<link rel="stylesheet" href="css/design.css">

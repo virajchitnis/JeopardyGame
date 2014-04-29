@@ -27,9 +27,6 @@
 		if (file_exists("/vagrant")) {
 			exec("sudo mysqldump -u jeopardy -p'jeopardy_pass' jeopardy > /vagrant/savedata.sql");
 		}
-		else {
-			exec("sudo mysqldump -u jeopardy -p'jeopardy_pass' jeopardy > ../savedata.sql");
-		}
 		
 		header("Location: ../");
 	}
