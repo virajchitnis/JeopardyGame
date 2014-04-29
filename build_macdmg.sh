@@ -18,4 +18,8 @@ cp macosx_app/VirtualBox.pkg binaries/Jeopardy/.
 cp macosx_app/DS_Store binaries/Jeopardy/.DS_Store
 cp macosx_app/Readme.pdf binaries/Jeopardy/.
 
+if [ -f binaries/Jeopardy_latest.dmg ]; then
+	rm binaries/Jeopardy_latest.dmg
+fi
+
 hdiutil create binaries/Jeopardy_latest.dmg -srcfolder binaries/Jeopardy
