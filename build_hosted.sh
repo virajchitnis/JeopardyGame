@@ -15,6 +15,6 @@ if [ -f binaries/jeopardy_latest.tar.gz ]; then
 fi
 
 cd binaries/jeopardy
-tar -zcvf ../jeopardy.tar.gz ./
+tar -zcvf ../jeopardy_latest.tar.gz ./
 cd ../
 rm -rf jeopardy
