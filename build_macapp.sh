@@ -20,3 +20,10 @@ cp vagrant/bootstrap.sh binaries/Jeopardy.app/Contents/MacOS/.
 cp vagrant/Vagrantfile binaries/Jeopardy.app/Contents/MacOS/.
 
 cp -r src binaries/Jeopardy.app/Contents/MacOS/.
+
+if [ ! -d binaries/Jeopardy ]; then
+	mkdir binaries/Jeopardy
+	ln -s /Applications/ binaries/Jeopardy/Applications
+fi
+
+cp -r binaries/Jeopardy.app binaries/Jeopardy/.
