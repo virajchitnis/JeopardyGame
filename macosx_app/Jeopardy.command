@@ -90,10 +90,12 @@ function importData {
 
 # Check if Vagrant and VirtualBox are installed, if not, exit
 if [ ! -f /usr/bin/VBoxManage ]; then
+	clear
 	echo "VirtualBox not installed, please install VirtualBox to use this game."
 	exit 1
 fi
 if [ ! -f /usr/bin/vagrant ]; then
+	clear
 	echo "Vagrant not installed, please install Vagrant to use this game."
 	exit 1
 fi
