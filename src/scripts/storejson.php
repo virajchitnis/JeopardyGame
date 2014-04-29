@@ -18,9 +18,24 @@
 		    die('Unable to connect to database [' . $db->connect_error . ']');
 		}
 		
-		$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?, ?);");
-		$sql->bind_param("ssss", $name, $author, $json, $qbhash);
-		$sql->execute();
+		$db_count = $db->prepare("SELECT count(json_hash) FROM QBanks WHERE json_hash = ?;");
+		$db_count->bind_param('s', $key);
+		$db_count->execute();
+		$db_count->bind_result($count_key);
+		$db_count->fetch();
+		$db_count->free_result();
+		
+		if ($count_key > 0) {
+			$db_movies = $db->prepare("UPDATE QBanks SET name = ? , author = ? , json = ? WHERE json_hash = ?;");
+			$db_movies->bind_param("ssss", $name, $author, $json, $qbhash);
+			$db_movies->execute();
+			$db_movies->free_result();
+		}
+		else {
+			$sql = $db->prepare("INSERT INTO QBanks VALUES (?, ?, ?, ?);");
+			$sql->bind_param("ssss", $name, $author, $json, $qbhash);
+			$sql->execute();
+		}
 		
 		$db->close();
 		
