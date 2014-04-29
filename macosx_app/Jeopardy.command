@@ -61,7 +61,7 @@ function startGame {
 	tput sgr0
 	tput cup 13 15
 	echo -n "Closing virtual environment....."
-	vagrant destroy -f > /dev/null
+	vagrant halt > /dev/null
 	echo "Done"
 	
 	tput clear
