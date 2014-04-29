@@ -88,6 +88,16 @@ function importData {
 	fi
 }
 
+# Check if Vagrant and VirtualBox are installed, if not, exit
+if [ ! -f /usr/bin/VBoxManage ]; then
+	echo "VirtualBox not installed, please install VirtualBox to use this game."
+	exit 1
+fi
+if [ ! -f /usr/bin/vagrant ]; then
+	echo "Vagrant not installed, please install Vagrant to use this game."
+	exit 1
+fi
+
 BASEDIR=$(dirname $0)
 SAVELOC="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy"
 SAVEDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/savedata.sql"
