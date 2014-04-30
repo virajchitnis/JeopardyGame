@@ -9,14 +9,12 @@ if [ ! -d binaries/Jeopardy ]; then
 	ln -s /Applications/ binaries/Jeopardy/Applications
 fi
 
-cp -r binaries/Jeopardy.app binaries/Jeopardy/.
+mv binaries/Jeopardy.app binaries/Jeopardy/.
 mkdir binaries/Jeopardy/.background
-cp macosx_app/dmg_background.jpg binaries/Jeopardy/.background/background.jpg
+cp macosx_app/JeopardyDMG_Background_Small.jpg binaries/Jeopardy/.background/background.jpg
 
-cp macosx_app/Vagrant.pkg binaries/Jeopardy/.
-cp macosx_app/VirtualBox.pkg binaries/Jeopardy/.
 cp macosx_app/DS_Store binaries/Jeopardy/.DS_Store
-cp macosx_app/Readme.pdf binaries/Jeopardy/.
+pandoc -o binaries/Jeopardy/README.html README.md
 
 if [ -f binaries/Jeopardy_latest.dmg ]; then
 	rm binaries/Jeopardy_latest.dmg
