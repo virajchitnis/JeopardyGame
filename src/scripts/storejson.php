@@ -3,8 +3,13 @@
 		$json = $_POST['json'];
 		$name = $_POST['name'];
 		$author = $_POST['author'];
-		
-		$qbhash = hash('md5', $name.$author.$json);
+		$qbhash;
+		if (isset($_POST['key'])) {
+			$qbhash = $_POST['key'];
+		}
+		else {
+			$qbhash = hash('md5', $name.$author.$json);
+		}
 		
 		if (file_exists('../config/config.php')) {
 			include("../config/config.php");
@@ -19,7 +24,7 @@
 		}
 		
 		$db_count = $db->prepare("SELECT count(json_hash) FROM QBanks WHERE json_hash = ?;");
-		$db_count->bind_param('s', $key);
+		$db_count->bind_param('s', $qbhash);
 		$db_count->execute();
 		$db_count->bind_result($count_key);
 		$db_count->fetch();

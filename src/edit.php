@@ -4,6 +4,7 @@
 			$json;
 			$name;
 			$author;
+			$json_hash;
 			$questions;
 			if (isset($_GET['key'])) {
 				$json_hash = $_GET['key'];
@@ -236,6 +237,7 @@
 						<input type="hidden" name="json" value="">
 						<input type="hidden" name="name" value="">
 						<input type="hidden" name="author" value="">
+						<input type="hidden" name="key" value="<?php echo $json_hash ?>">
 						<input type="submit" value="Done">
 					</form>
 					<button class="create_game_buttons" onclick="openLink('./')" id="back_button">Go back</button>

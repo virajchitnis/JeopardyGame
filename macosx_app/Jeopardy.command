@@ -107,6 +107,7 @@ cd ${BASEDIR}
 
 if [ -f "updatebox" ]; then
 	if [ -d "${SAVELOC}" ]; then
+		vagrant destroy -f > /dev/null
 		vagrant box remove jeopardy > /dev/null
 		rm updatebox
 	fi
