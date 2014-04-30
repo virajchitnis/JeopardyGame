@@ -22,6 +22,10 @@ Installation for any LAMP server
 
 The installation instructions here are very generic and may need to be tailored specifically for your server setup.
 
+1. Download and untar the tar.gz file to your Apache server root, the command may look something like this 'tar -zxvf jeopardy.tar.gz'.
+2. Change the owner of the extracted folder to your Apache server user, 'apache' or 'www-data', depending upon your linux distro.
+3. Visit your jeopardy game folder on your server via the browser and enjoy.
+
 OS support
 ----------
 
