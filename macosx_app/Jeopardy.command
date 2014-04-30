@@ -124,7 +124,7 @@ fi
 if [ -f "updatebox" ]; then
 	if [ -d .vagrant ]; then
 		vagrant destroy -f > /dev/null
-		vagrant box remove jeopardy_game > /dev/null
+		vagrant box remove jeopardygame > /dev/null
 		rm updatebox
 	fi
 fi
