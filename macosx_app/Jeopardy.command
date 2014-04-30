@@ -8,11 +8,9 @@ function saveToLibrary {
 			mkdir -p "${SAVELOC}"
 		fi
 		if [ -f "${SAVEDATA}" ]; then
-			if [ ! cmp -s "savedata.sql" "${SAVEDATA}" ]; then
-				CURRDATE=$(date +"%Y-%m-%d-%H-%M-%S")
-				mv "${SAVEDATA}" "${SAVELOC}/savedata-${CURRDATE}.sql"
-				cp savedata.sql "${SAVEDATA}"
-			fi
+			CURRDATE=$(date +"%Y-%m-%d-%H-%M-%S")
+			mv "${SAVEDATA}" "${SAVELOC}/savedata-${CURRDATE}.sql"
+			cp savedata.sql "${SAVEDATA}"
 		else
 			cp savedata.sql "${SAVEDATA}"
 		fi
@@ -48,6 +46,11 @@ function startGame {
 	tput cup 7 15
 	echo -n "Initializing virtual environment....."
 	vagrant up > /dev/null
+	if [ -f savedata.sql ]; then
+		vagrant ssh -c "sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/savedata.sql" > /dev/null
+	else
+		vagrant ssh -c "sudo mysql -u jeopardy -p'jeopardy_pass' jeopardy < /vagrant/src/scripts/database.sql" > /dev/null
+	fi
 	echo "Done"
 
 	tput cup 8 15
@@ -61,6 +64,7 @@ function startGame {
 	tput sgr0
 	tput cup 13 15
 	echo -n "Closing virtual environment....."
+	vagrant ssh -c "sudo /usr/bin/mysqldump -u jeopardy -p'jeopardy_pass' jeopardy > /vagrant/savedata.sql" > /dev/null
 	vagrant halt > /dev/null
 	echo "Done"
 	

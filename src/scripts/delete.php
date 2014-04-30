@@ -21,13 +21,6 @@
 		
 		$db->close();
 		
-		if (file_exists("/vagrant")) {
-			if (file_exists("/vagrant/savedata.sql")) {
-				exec("sudo rm /vagrant/savedata.sql");
-			}
-			exec("sudo mysqldump -u jeopardy -p'jeopardy_pass' jeopardy > /vagrant/savedata.sql");
-		}
-		
 		header('Location: ../games');
 	}
 	else {
