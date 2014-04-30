@@ -7,6 +7,9 @@ function saveToLibrary {
 		if [ ! -d "${SAVELOC}" ]; then
 			mkdir -p "${SAVELOC}"
 		fi
+		if [ ! -d "${VAGRANTDATA}" ] && [ -d .vagrant ]; then
+			cp -r .vagrant "${VAGRANTDATA}"
+		fi
 		if [ -f "${SAVEDATA}" ]; then
 			CURRDATE=$(date +"%Y-%m-%d-%H-%M-%S")
 			mv "${SAVEDATA}" "${SAVELOC}/savedata-${CURRDATE}.sql"
@@ -107,6 +110,7 @@ fi
 BASEDIR=$(dirname $0)
 SAVELOC="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy"
 SAVEDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/savedata.sql"
+VAGRANTDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/.vagrant"
 cd ${BASEDIR}
 
 if [ -f "updatebox" ]; then
@@ -119,6 +123,10 @@ fi
 
 if [ -f "${SAVEDATA}" ]; then
 	cp "${SAVEDATA}" savedata.sql
+fi
+
+if [ -d "${VAGRANTDATA}" ] && [ ! -d .vagrant ]; then
+	cp -r "${VAGRANTDATA}" .vagrant
 fi
 
 tput clear
