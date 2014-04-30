@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d binaries ]; then
+if [ ! -d binaries/Jeopardy.app ]; then
 	./build_macapp.sh
 fi
 
@@ -21,3 +21,4 @@ if [ -f binaries/Jeopardy_latest.dmg ]; then
 fi
 
 hdiutil create binaries/Jeopardy_latest.dmg -srcfolder binaries/Jeopardy
+rm -r binaries/Jeopardy
