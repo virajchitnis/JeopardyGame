@@ -44,7 +44,7 @@ OS support
 Changelog
 ---------
 
-Version 2.1
+Version 2.1 (coming soon)
 
 * Ability to delete games
 * Ability to edit previously created games
