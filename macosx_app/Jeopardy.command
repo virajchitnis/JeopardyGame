@@ -113,20 +113,20 @@ SAVEDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/savedat
 VAGRANTDATA="/Users/$(whoami)/Library/Preferences/com.virajchitnis.Jeopardy/.vagrant"
 cd ${BASEDIR}
 
-if [ -f "updatebox" ]; then
-	if [ -d "${SAVELOC}" ]; then
-		vagrant destroy -f > /dev/null
-		vagrant box remove jeopardy > /dev/null
-		rm updatebox
-	fi
-fi
-
 if [ -f "${SAVEDATA}" ]; then
 	cp "${SAVEDATA}" savedata.sql
 fi
 
 if [ -d "${VAGRANTDATA}" ] && [ ! -d .vagrant ]; then
 	cp -r "${VAGRANTDATA}" .vagrant
+fi
+
+if [ -f "updatebox" ]; then
+	if [ -d .vagrant ]; then
+		vagrant destroy -f > /dev/null
+		vagrant box remove jeopardy_game > /dev/null
+		rm updatebox
+	fi
 fi
 
 tput clear
