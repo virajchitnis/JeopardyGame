@@ -18,6 +18,8 @@ Requirements
 Installation for Mac OS X 10.8+
 -------------------------------
 
+Download [Jeopardy-2.1.dmg](https://github.com/virajchitnis/JeopardyGame/releases/download/v2.1/Jeopardy-2.1.dmg)
+
 1. Download and open the disk image.
 2. Drag the Jeopardy app icon to the ‘Applications’ icon.
 3. Close the disk image window and open your ‘Applications’ folder.
@@ -28,7 +30,9 @@ Installation for any LAMP server
 
 The installation instructions here are very generic and may need to be tailored specifically for your server setup.
 
-1. Download and untar the tar.gz file to your Apache server root, the command may look something like this 'tar -zxvf jeopardy.tar.gz'.
+Download [Jeopardy-2.1.tar.gz](https://github.com/virajchitnis/JeopardyGame/releases/download/v2.1/Jeopardy-2.1.tar.gz)
+
+1. Download and untar the tar.gz file to your Apache server root, the command may look something like this 'tar -zxvf Jeopardy-2.1.tar.gz'.
 2. Change the owner of the extracted folder to your Apache server user, 'apache' or 'www-data', depending upon your linux distro.
 3. Create a database and corresponding user in MySQL.
 4. Import the database template into the MySQL database, command may look something like this 'mysql -u username -p'password' database_name < scripts/database.sql'.
@@ -44,7 +48,7 @@ OS support
 Changelog
 ---------
 
-Version 2.1 (coming soon)
+Version 2.1
 
 * Ability to delete games
 * Ability to edit previously created games
