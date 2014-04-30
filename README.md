@@ -9,6 +9,12 @@ When the game is started, it may take a few minutes for the virtual environment 
 
 On its first run (after installation or updating), the virtual environment will take longer than usual to initialize because it has to download the virtual environment root disk image and then create the virtual environment. On subsequent runs, it will be much faster because the downloaded root disk image will be saved and reused.
 
+Requirements
+------------
+
+* VirtualBox 4.1+ (with corresponding extenstions pack)
+* Vagrant 1.5.4+
+
 Installation for Mac OS X 10.8+
 -------------------------------
 
@@ -29,5 +35,5 @@ The installation instructions here are very generic and may need to be tailored 
 OS support
 ----------
 
-*Mac OS X 10.8+ (requires a working copy of VirtualBox 4.1+ and Vagrant 1.5.4+)
-*AMP (Apache, MySQL, PHP) server
+* Mac OS X 10.8+ (requires a working copy of VirtualBox 4.1+ and Vagrant 1.5.4+)
+* AMP (Apache, MySQL, PHP) server
