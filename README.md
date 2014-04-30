@@ -1,5 +1,6 @@
 Jeopardy! by Viraj Chitnis
 ==========================
+Try out a working copy of this game at [jeopardy.virajchitnis.com](http://jeopardy.virajchitnis.com).
 
 The Jeopardy! game is a web application that can be used by professors, instructors, teachers, etc as a fun review session in class. It was developed to replace a badly designed, Windows only Jeopardy game that one of my professors was using in class. The professor has now switched to using this on their Mac.
 
