@@ -30,10 +30,27 @@ The installation instructions here are very generic and may need to be tailored 
 
 1. Download and untar the tar.gz file to your Apache server root, the command may look something like this 'tar -zxvf jeopardy.tar.gz'.
 2. Change the owner of the extracted folder to your Apache server user, 'apache' or 'www-data', depending upon your linux distro.
-3. Visit your jeopardy game folder on your server via the browser and enjoy.
+3. Create a database and corresponding user in MySQL.
+4. Import the database template into the MySQL database, command may look something like this 'mysql -u username -p'password' database_name < scripts/database.sql'.
+5. Modify the config/config.php file to match your database parameters.
+6. Visit your jeopardy game folder on your server via the browser and enjoy.
 
 OS support
 ----------
 
-* Mac OS X 10.8+ (requires a working copy of VirtualBox 4.1+ and Vagrant 1.5.4+)
+* Mac OS X 10.8+
 * AMP (Apache, MySQL, PHP) server
+
+Changelog
+---------
+
+Version 2.1
+
+* Ability to delete games
+* Ability to edit previously created games
+* Hosted version of game that can be installed on a LAMP server
+* Some major and some minor bug fixes
+
+Version 2.0
+
+* Converted the game to a Mac application
