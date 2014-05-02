@@ -27,12 +27,13 @@ Requirements
 
 Download [Jeopardy-2.2.tar.gz](https://github.com/virajchitnis/JeopardyGame/releases/download/v2.2/Jeopardy-2.2.tar.gz)
 
-1. Download and untar the tar.gz file to your Apache server root, the command may look something like this 'tar -zxvf Jeopardy-2.2.tar.gz'.
+1. Download and untar the tar.gz file to your Apache server root, the command may look something like this '*tar -zxvf Jeopardy-2.2.tar.gz*'.
 2. Change the owner of the extracted folder to your Apache server user, 'apache' or 'www-data', depending upon your linux distro.
 3. Create a database and corresponding user in MySQL.
-4. Import the database template into the MySQL database, command may look something like this 'mysql -u username -p'password' database_name < scripts/database.sql'.
-5. Modify the config/config.php file to match your database parameters.
+4. Import the database template into the MySQL database, command may look something like this '*mysql -u username -p'password' database_name < scripts/database.sql*'.
+5. Modify the '*config/config.php*' file to match your database parameters.
 6. Visit your jeopardy game folder on your server via the browser and enjoy.
+7. (Optional step) If you want to use Google Analytics to track your site usage. Modify the '*common/googleanalytics_template.php*' to match your google analytics tracking code and move that file to '*common/googleanalytics.php*'.
 
 Installation for Mac OS X 10.8+
 -------------------------------
