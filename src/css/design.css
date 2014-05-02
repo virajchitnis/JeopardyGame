@@ -44,7 +44,7 @@ input, button {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -2em;
+	margin: 0 auto -3em;
 }
 .header {
 	margin-left: 1cm;
@@ -240,7 +240,7 @@ input[type=submit] {
 	margin-left: 1cm;
 }
 .footer, .push {
-	height: 2em;
+	height: 3em;
 }
 .footer_text {
 	font-size: 8pt;
