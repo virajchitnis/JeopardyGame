@@ -35,6 +35,11 @@
 				header("Location: create");
 			}
 		?>
+		<?php
+		if (file_exists('common/googleanalytics.php')) {
+			include('common/googleanalytics.php');
+		}
+		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/create.js"></script>
 		<script src="js/types.js"></script>

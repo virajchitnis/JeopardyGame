@@ -1,5 +1,10 @@
 <html>
 	<head>
+		<?php
+		if (file_exists('common/googleanalytics.php')) {
+			include('common/googleanalytics.php');
+		}
+		?>
 		<meta charset="UTF-8">
 		<meta name="author" content="Viraj Chitnis">
 		<meta name="description" content="Jeopardy! Game">

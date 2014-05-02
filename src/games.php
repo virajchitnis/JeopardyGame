@@ -17,6 +17,11 @@
 			$sql->execute();
 			$sql->bind_result($name, $author, $json_hash);
 		?>
+		<?php
+		if (file_exists('common/googleanalytics.php')) {
+			include('common/googleanalytics.php');
+		}
+		?>
 		<link rel="stylesheet" href="css/design.css">
 		<script src="js/openlink.js"></script>
 		<meta charset="UTF-8">

@@ -2,3 +2,4 @@ savedata.sql
 savedata.jeop
 binaries/
 .vagrant/
+src/common/googleanalytics.php
