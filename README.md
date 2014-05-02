@@ -19,7 +19,7 @@ Installation for Mac OS X 10.8+
 
 Requirements
 
-* VirtualBox 4.1+ (with corresponding extenstions pack)
+* VirtualBox 4.3.10 (with corresponding extenstions pack)
 * Vagrant 1.5.4+
 
 Download [Jeopardy-2.1.dmg](https://github.com/virajchitnis/JeopardyGame/releases/download/v2.1/Jeopardy-2.1.dmg)
